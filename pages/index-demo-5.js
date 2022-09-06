@@ -28,7 +28,7 @@ const RecentWorks = dynamic(
   }
 );
 const bio = `<p>
-<strong>Hello! I’m Casandra Wood.</strong><br>
+<strong>Hello! I’m Casandra Wood Tốt</strong><br>
 Lawyer from UK, London. I have licensed by the state in which I practice to advise and represent clients on legal matters including animal rights.
 </p>`;
 
@@ -79,7 +79,7 @@ const Index6 = () => {
             style={{ backgroundImage: "url(images/profile5.jpg)" }}
           />
           {/* profile titles */}
-          <div className="title">Casandra Wood</div>
+          <div className="title">Mai Thi My Giang</div>
           <div className="subtitle">Lawyer</div>
           {/* profile socials */}
           <div className="social">
