@@ -13,103 +13,139 @@ import ContactInfo from "../src/components/sections/ContactInfo";
 import FunFact from "../src/components/sections/FunFact";
 import Pricing from "../src/components/sections/Pricing";
 import Quote from "../src/components/sections/Quote";
-import ResumeSection from "../src/components/sections/Resume";
+import { ResumeSectionFitness } from "../src/components/sections/Resume";
+// import RecentWorksFitness from "../src/components/sections/recentWorks/RecentWorksFitness";
 import Services from "../src/components/sections/Services";
-import Skills from "../src/components/sections/Skills";
+import { SkillsFitness } from "../src/components/sections/Skills";
 import Testimonials from "../src/components/sections/Testimonials";
 import TypingAnimation from "../src/components/TypingAnimation";
 import Work from "../src/components/Work";
 import ContentContainer from "../src/layout/ContentContainer";
 import Header from "../src/layout/Header";
 import Layout from "../src/layout/Layout";
-const RecentWorks = dynamic(
-  () => import("../src/components/sections/RecentWorks"),
+
+const RecentWorksFitness = dynamic(
+  () => import("../src/components/sections/recentWorks/RecentWorksFitness"),
   {
     ssr: false,
   }
 );
+
 const bio = `<p>
-I am Ryan Adlard, web designer from USA, California. I have rich experience in
-web site design and building and customization, also I am good at wordpress.
-I love to talk with you about our unique.
+<strong>Hello I'm Tran Phi Anh.</strong>
+Front-End Developer from DaNang.
+&amp My big goal is to improve my coding and
+teamwork skills, leverage and understand
+myself to become a professional developer. A
+fast learner and hard worker looking forward
+to having the opportunity to work for your
+company.
 </p>`;
-const IndexDark = () => {
+
+const serviceList = [
+  {
+    icon: "fa fa-building-o",
+    title: "FPT Software Developer",
+    desc: "Participated in the development of Web projects and built front-end functions of Web applications. Maintain, optimize code and enhance ongoing products",
+  },
+  {
+    icon: "fa fa-code",
+    title: "Front-End Developer",
+    desc: "Having above 1-year experience in developing Front-End application using ReactJs, Angular. Normal task is design, developent new story, fix bugs, reformatting code for make simple, clear, not duplication",
+  },
+  {
+    icon: "fa fa-code",
+    title: "Back-End",
+    desc: "Knowledge of Rest API architecture style, design patterns, security...",
+  },
+  {
+    icon: "fa fa-commenting",
+    title: "Team Work, Communication",
+    desc: "Can read and understand English well, basic English communication. More than 1 year of team work experience.",
+  },
+];
+
+const headerMenus = [
+  { title: "About", link: "about", icon: "icon ion-person" },
+  { title: "Resume", link: "resume", icon: "icon ion-android-list" },
+  { title: "Gallery", link: "works", icon: "icon ion-images" },
+  // { title: "Blog", link: "blog", icon: "icon ion-chatbox-working" },
+  { title: "Contact", link: "contacts", icon: "icon ion-at" },
+];
+
+const animationText = ["Active person", "Front-End Developer", "Back-End Developer"];
+
+const Index5 = () => {
   return (
-    <Layout bg={"blured"}>
+    <Layout
+      bg={"img"}
+      bgImgUrl="images/bg3.jpg"
+      animationIn={"rollIn"}
+      animationOut={"rollOut"}
+    >
       <Head>
         <link rel="stylesheet" href="css/new-skin/new-skin.css" />
-        <link rel="stylesheet" href="css/template-dark/dark.css" />
-        <link rel="stylesheet" href="css/new-skin/minimal-skin.css" />
+        <link rel="stylesheet" href="css/demos/demo-5-colors.css" />
       </Head>
-      <Header />
+      <Header noSideBarBtn menus={headerMenus} animationText={animationText} />
       <Home>
         <div className="profile no-photo">
+          {/* profile image */}
           <div
             className="slide"
-            style={{ backgroundImage: "url(images/avatar1.jpg)" }}
+            style={{ backgroundImage: "url(images/avatar-profile.jpg)" }}
           />
-          <div className="title">Ryan Adlard</div>
-          <TypingAnimation />
+          {/* profile titles */}
+          <div className="title">Tran Phi Anh</div>
+          <TypingAnimation data={animationText} />
+
+          {/* profile socials */}
           <div className="social">
-            <a target="_blank" rel="noreferrer" href="https://dribbble.com/">
-              <span className="fa fa-dribbble" />
+            <a target="_blank" rel="noreferrer" href="https://www.instagram.com/tran_phi_anh_2008/">
+              <span className="fa fa-instagram" title="Instagram" />
             </a>
-            <a target="_blank" rel="noreferrer" href="https://twitter.com/">
-              <span className="fa fa-twitter" />
+            <a target="_blank" rel="noreferrer" href="https://www.facebook.com/Anhtpde140084/">
+              <span className="fa fa-facebook-f" title="Facebook" />
             </a>
-            <a target="_blank" rel="noreferrer" href="https://github.com/">
-              <span className="fa fa-github" />
-            </a>
-            <a target="_blank" rel="noreferrer" href="https://www.spotify.com/">
-              <span className="fa fa-spotify" />
-            </a>
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://stackoverflow.com/"
-            >
-              <span className="fa fa-stack-overflow" />
+            <a target="_blank" rel="noreferrer" href="https://soundcloud.com/tr-n-phi-anh-900810560">
+              <span className="fa fa-soundcloud" title="Sound Cloud" />
             </a>
           </div>
           {/* profile buttons */}
           <div className="lnks">
-            <a href="#" className="lnk">
-              <span className="text">Download CV</span>
-              <span class="ion ion-ios-cloud-download"></span>
-            </a>
-            <a href="#" className="lnk discover">
+            <a href="https://www.facebook.com/messages/t/100015031178777" target="_blank" className="lnk discover">
               <span className="text">Contact Me</span>
-              <span class="ion ion-paper-airplane"></span>
+              <span className="ion ion-paper-airplane" />
             </a>
           </div>
         </div>
       </Home>
       <ContentContainer>
-        <About>
+        <About >
           <AboutMe bio={bio} />
-          <Services />
-          <Pricing />
+          {/* <Clients /> */}
+          {/* <Services serviceList={serviceList} /> */}
+          {/* <Pricing /> */}
           <FunFact />
-          <Clients />
           <Quote />
         </About>
-        <Resume>
-          <ResumeSection />
-          <Skills />
-          <Testimonials />
+        <Resume >
+          <ResumeSectionFitness />
+          <SkillsFitness />
+          {/* <Testimonials /> */}
         </Resume>
-        <Work>
-          <RecentWorks />
+        <Work >
+          <RecentWorksFitness />
         </Work>
-        <Blog>
+        <Blog >
           <BlogSection />
         </Blog>
-        <Contact>
+        <Contact >
           <ContactInfo />
-          <ContactForm />
+          {/* <ContactForm /> */}
         </Contact>
       </ContentContainer>
     </Layout>
   );
 };
-export default IndexDark;
+export default Index5;

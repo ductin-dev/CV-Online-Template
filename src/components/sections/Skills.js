@@ -188,6 +188,16 @@ const Skills = () => {
 export default Skills;
 
 export const SkillsFitness = () => {
+  const skills = [
+    { href: "", image: "https://seeklogo.com/images/J/javascript-logo-8892AEFCAC-seeklogo.com.png", name: "Javascript" },
+    { href: "", image: "https://w7.pngwing.com/pngs/915/519/png-transparent-typescript-hd-logo-thumbnail.png", name: "Typescript" },
+    { href: "", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png", name: "ReactJs, React native" },
+    { href: "", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png", name: "Angular" },
+    { href: "", image: "https://miro.medium.com/max/856/1*O68LbDvD5Dcsnez73M7v4Q.png", name: "Spring Boot" },
+    { href: "", image: "https://stackjava.com/wp-content/uploads/2018/07/mongodb.png", name: "MongoDb" },
+    { href: "", image: "https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png", name: "Docker" },
+    { href: "", image: "https://upload.wikimedia.org/wikipedia/commons/9/96/Socket-io.svg", name: "Socket.io" },
+  ]
   return (
     <Fragment>
       <div className="content skills">
@@ -196,40 +206,33 @@ export const SkillsFitness = () => {
         {/* content */}
         <div className="row">
           {/* skill item */}
-          <div className="col col-d-12 col-t-12 col-m-12 border-line-v">
-            <div className="skills-list">
-              <div className="skill-title border-line-h">
-                <div className="icon">
-                  <i className="fa fa-bicycle" />
+          <div className="content clients p-2" style={{ padding: '4%' }}>
+            {/* content */}
+            <div className="row client-items">
+              {/* client item */}
+              {skills.map((item) => (
+                <div className="col col-d-3 col-t-3 col-m-6 border-line-v">
+                  <div className="">
+                    <div className="image">
+                      <a
+                        target="_blank"
+                        rel="noreferrer"
+                        href={item.href}
+                      >
+                        <img src={item.image} width={35} height={35} alt="" />
+                      </a>
+                    </div>
+                    <div>
+                      <p className="" style={{ fontSize: '11px' }}>{item.name}</p>
+                    </div>
+                  </div>
                 </div>
-                <div className="name">Fitness</div>
-              </div>
-              <ul>
-                <li className="border-line-h">
-                  <div className="name">Agility</div>
-                  <div className="progress">
-                    <div className="percentage" style={{ width: "90%" }} />
-                  </div>
-                </li>
-                <li className="border-line-h">
-                  <div className="name">Balance</div>
-                  <div className="progress">
-                    <div className="percentage" style={{ width: "65%" }} />
-                  </div>
-                </li>
-                <li className="border-line-h">
-                  <div className="name">Power</div>
-                  <div className="progress">
-                    <div className="percentage" style={{ width: "75%" }} />
-                  </div>
-                </li>
-                <li>
-                  <div className="name">Speed</div>
-                  <div className="progress">
-                    <div className="percentage" style={{ width: "85%" }} />
-                  </div>
-                </li>
-              </ul>
+              ))}
+              <div className="clear" />
+            </div>
+            <div className="moreskills">
+              <h6>There are also some related skills: </h6>
+              <p>Git, Redux, Firebase, Mysql, Sqlsv, HTML5, CSS, SASS..v.v.</p>
             </div>
           </div>
           {/* skill item */}
@@ -243,29 +246,18 @@ export const SkillsFitness = () => {
               </div>
               <ul>
                 <li className="border-line-h">
-                  <div className="name">English</div>
-                  <div className="progress">
+                  <div className="name">Vietnamese</div>
+                  {/* <div className="progress">
                     <div className="percentage" style={{ width: "90%" }} />
-                  </div>
+                  </div> */}
                 </li>
                 <li className="border-line-h">
-                  <div className="name">German</div>
-                  <div className="progress">
+                  <div className="name">English</div>
+                  {/* <div className="progress">
                     <div className="percentage" style={{ width: "60%" }} />
-                  </div>
+                  </div> */}
                 </li>
-                <li className="border-line-h">
-                  <div className="name">Italian</div>
-                  <div className="progress">
-                    <div className="percentage" style={{ width: "30%" }} />
-                  </div>
-                </li>
-                <li>
-                  <div className="name">French</div>
-                  <div className="progress ">
-                    <div className="percentage" style={{ width: "70%" }} />
-                  </div>
-                </li>
+
               </ul>
             </div>
           </div>
@@ -280,15 +272,21 @@ export const SkillsFitness = () => {
               </div>
               <ul>
                 <li>
-                  <div className="name">Fat Burn</div>
+                  <div className="name">Object-oriented programming, Singleton, Mvc architecture, Java, Spring boot...</div>
                 </li>
                 <li>
-                  <div className="name">Body condition</div>
+                  <div className="name">HTML, CSS, Sass, Javascript, Typescript, ReactJs, React Native, Angular
+                  </div>
                 </li>
                 <li>
-                  <div className="name">Strength training</div>
+                  <div className="name">MySQL, SQL, MongoDB
+                  </div>
                 </li>
                 <li>
+                  <div className="name">Git, Jira...
+                  </div>
+                </li>
+                {/* <li>
                   <div className="name">Faster exercise</div>
                 </li>
                 <li>
@@ -299,7 +297,7 @@ export const SkillsFitness = () => {
                 </li>
                 <li>
                   <div className="name">Cardio training</div>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>

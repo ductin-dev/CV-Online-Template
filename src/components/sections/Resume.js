@@ -104,20 +104,44 @@ export const ResumeSectionFitness = () => {
           </div>
           <div className="resume-items">
             <div className="resume-item border-line-h active">
-              <div className="date">2013 - Present</div>
-              <div className="name">Fitness Trainer</div>
-              <div className="company">Gym Club</div>
+              {/* <div className="date">2021 - 2022</div> */}
+              <div className="name">Developer</div>
+              <div className="company">FPT Software</div>
               <p>
-                Inspired clients to push their hardest and do their very best.
+                + Participated in the development of Web projects and built front-end functions of Web applications, IDE platform.
+              </p>
+              <p>
+                + Implement functions and modules base on given requirements.
+              </p>
+              <p>
+                + Developing a LowCode platform for developer used in their products.
+              </p>
+              <p>
+                + Maintain, optimize code and enhance ongoing products.
               </p>
             </div>
             <div className="resume-item border-line-h">
-              <div className="date">2011 - 2012</div>
-              <div className="name">Cardio Trainer</div>
-              <div className="company">High-Intensity Complex</div>
+              {/* <div className="date">2021 - 2022</div> */}
+              <div className="name">Front-End developer</div>
+              {/* <div className="company">FPT Software - IDE Low-code(Akadev)</div> */}
               <p>
-                Dynamic sculpting exercises for the perfect balance of cardio
-                and strength training.
+                Having above 1-year experience in developing Front-End application using ReactJs, Angular. Experience about normal task is design, developent new story, fix bugs, reformatting code for make simple, clear, not duplication.
+              </p>
+            </div>
+            <div className="resume-item border-line-h">
+              {/* <div className="date">2021 - 2022</div> */}
+              <div className="name">Back-End developer</div>
+              {/* <div className="company">FPT University - IDE Low-code(Akadev)</div> */}
+              <p>
+                Knowledge of OOP, Rest API architecture style, design patterns, security...
+              </p>
+            </div>
+            <div className="resume-item border-line-h">
+              {/* <div className="date">2021 - 2022</div> */}
+              <div className="name">Team Work, Communication</div>
+              {/* <div className="company">FPT University - IDE Low-code(Akadev)</div> */}
+              <p>
+                Can read and understand English well, basic English communication. More than 1 year of team work experience.
               </p>
             </div>
           </div>
@@ -132,19 +156,18 @@ export const ResumeSectionFitness = () => {
           </div>
           <div className="resume-items">
             <div className="resume-item border-line-h">
-              <div className="date">2006 - 2008</div>
-              <div className="name">Pace University</div>
-              <div className="company">New York</div>
+              <div className="date">2015 - 2018</div>
+              <div className="name">Quang Tri Town High school</div>
+              <div className="company">Quang Tri</div>
               <p>
-                Pace University is a private university with its main campus in
-                New York City.
+                As a famous school number 1 in Quang Tri, there are many academic achievements as well as great programs of VTV.
               </p>
             </div>
             <div className="resume-item border-line-h">
-              <div className="date">2005 - 2006</div>
-              <div className="name">Fitness Course</div>
-              <div className="company">London</div>
-              <p>Personal trainer and fitness instructor courses in London.</p>
+              <div className="date">2018 - 2022</div>
+              <div className="name">FPT University</div>
+              <div className="company">DaNang</div>
+              <p>FPT University is a private university with main campus in Da Nang belonging to FPT Corporation.</p>
             </div>
           </div>
         </div>

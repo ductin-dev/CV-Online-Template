@@ -13,17 +13,16 @@ const Quote = () => {
             <div className="revs-item">
               <div className="text">
                 <div>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
-                  ipsum dolor sit amet, consectetur adipiscing elit.
+                  If you don't take risks with the unusual, you will forever be stuck with the ordinary.
                 </div>
               </div>
               <div className="user">
                 <div className="img">
-                  <img src="images/man1.jpg" alt="Ryan Adlard" />
+                  <img src="https://nhahangcarnaval.com/wp-content/uploads/2022/01/hinh-anh-avatar-de-thuong-cute.jpg" alt="PhiAnh" />
                 </div>
                 <div className="info">
-                  <div className="name">Ryan Adlard</div>
-                  <div className="company">Web Designer</div>
+                  <div className="name">Phi Anh</div>
+                  <div className="company">Developer</div>
                 </div>
                 <div className="clear" />
               </div>

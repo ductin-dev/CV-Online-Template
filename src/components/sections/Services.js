@@ -30,7 +30,7 @@ const Services = ({ serviceList }) => {
       <div className="content services">
         {/* title */}
         <div className="title">
-          <span className="first-word">My</span> Services
+          <span className="first-word">My</span> Experiences
         </div>
         {/* content */}
         <div className="row service-items border-line-v">

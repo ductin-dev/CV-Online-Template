@@ -42,7 +42,7 @@ const RecentWorksFitness = () => {
         <div className="title">Recent Works</div>
         {/* filters */}
         <div className="filter-menu filter-button-group">
-          <div
+          {/* <div
             className={`f_btn ${activeBtn("*")}`}
             onClick={handleFilterKeyChange("*")}
           >
@@ -50,7 +50,7 @@ const RecentWorksFitness = () => {
               <input type="radio" name="fl_radio" defaultValue="grid-item" />
               All
             </label>
-          </div>
+          </div> */}
           <div
             className={`f_btn ${activeBtn("photo")}`}
             onClick={handleFilterKeyChange("photo")}
@@ -60,7 +60,7 @@ const RecentWorksFitness = () => {
               Image
             </label>
           </div>
-          <div
+          {/* <div
             className={`f_btn ${activeBtn("gallery")}`}
             onClick={handleFilterKeyChange("gallery")}
           >
@@ -77,7 +77,7 @@ const RecentWorksFitness = () => {
               <input type="radio" name="fl_radio" defaultValue="video" />
               Video
             </label>
-          </div>
+          </div> */}
         </div>
         {/* content */}
         <div className="row grid-items border-line-v">
@@ -85,8 +85,8 @@ const RecentWorksFitness = () => {
           <div className="col col-d-6 col-t-6 col-m-12 grid-item photo border-line-h">
             <div className="box-item">
               <div className="image">
-                <a href="images/twork1.jpg" className="has-popup-image">
-                  <img src="images/twork1.jpg" alt="" />
+                <a href="images/image-1.jpg" className="has-popup-image">
+                  <img src="images/image-1.jpg" alt="" />
                   <span className="info">
                     <span className="ion ion-image" />
                   </span>
@@ -94,17 +94,127 @@ const RecentWorksFitness = () => {
               </div>
               <div className="desc">
                 <a
-                  href="images/works/work1.jpg"
+                  href="images/image-1.jpg"
                   className="name has-popup-image"
                 >
-                  Fitness Item 1
+                  Akadev IDE LowCode Team
+                </a>
+                <div className="category">Image</div>
+              </div>
+            </div>
+          </div>
+
+          <div className="col col-d-6 col-t-6 col-m-12 grid-item photo border-line-h">
+            <div className="box-item">
+              <div className="image">
+                <a href="images/image-2.jpg" className="has-popup-image">
+                  <img src="images/image-2.jpg" alt="" />
+                  <span className="info">
+                    <span className="ion ion-image" />
+                  </span>
+                </a>
+              </div>
+              <div className="desc">
+                <a
+                  href="images/image-2.jpg"
+                  className="name has-popup-image"
+                >
+                  Team Travel Together
+                </a>
+                <div className="category">Image</div>
+              </div>
+            </div>
+          </div>
+
+          <div className="col col-d-6 col-t-6 col-m-12 grid-item photo border-line-h">
+            <div className="box-item">
+              <div className="image">
+                <a href="images/image-3.jpg" className="has-popup-image">
+                  <img src="images/image-3.jpg" alt="" />
+                  <span className="info">
+                    <span className="ion ion-image" />
+                  </span>
+                </a>
+              </div>
+              <div className="desc">
+                <a
+                  href="images/image-3.jpg"
+                  className="name has-popup-image"
+                >
+                  Me
+                </a>
+                <div className="category">Image</div>
+              </div>
+            </div>
+          </div>
+
+          <div className="col col-d-6 col-t-6 col-m-12 grid-item photo border-line-h">
+            <div className="box-item">
+              <div className="image">
+                <a href="images/image-5.jpg" className="has-popup-image">
+                  <img src="images/image-5.jpg" alt="" />
+                  <span className="info">
+                    <span className="ion ion-image" />
+                  </span>
+                </a>
+              </div>
+              <div className="desc">
+                <a
+                  href="images/image-5.jpg"
+                  className="name has-popup-image"
+                >
+                  F-Complex
+                </a>
+                <div className="category">Image</div>
+              </div>
+            </div>
+          </div>
+
+          <div className="col col-d-6 col-t-6 col-m-12 grid-item photo border-line-h">
+            <div className="box-item">
+              <div className="image">
+                <a href="images/image-6.jpg" className="has-popup-image">
+                  <img src="images/image-6.jpg" alt="" />
+                  <span className="info">
+                    <span className="ion ion-image" />
+                  </span>
+                </a>
+              </div>
+              <div className="desc">
+                <a
+                  href="images/image-6.jpg"
+                  className="name has-popup-image"
+                >
+                  Image
+                </a>
+                <div className="category">Image</div>
+              </div>
+            </div>
+          </div>
+
+          <div className="col col-d-6 col-t-6 col-m-12 grid-item photo border-line-h">
+            <div className="box-item">
+              <div className="image">
+                <a href="images/image-7.jpg" className="has-popup-image">
+                  <img src="images/image-7.jpg" alt="" />
+                  <span className="info">
+                    <span className="ion ion-image" />
+                  </span>
+                </a>
+              </div>
+              <div className="desc">
+                <a
+                  href="images/image-7.jpg"
+                  className="name has-popup-image"
+                >
+                  SATDEVELOP Team
                 </a>
                 <div className="category">Image</div>
               </div>
             </div>
           </div>
           {/* work item video */}
-          <div className="col col-d-6 col-t-6 col-m-12 grid-item video border-line-h">
+          {/* <div className="col col-d-6 col-t-6 col-m-12 grid-item video border-line-h">
             <div className="box-item">
               <div className="image">
                 <a
@@ -127,9 +237,9 @@ const RecentWorksFitness = () => {
                 <div className="category">Video</div>
               </div>
             </div>
-          </div>
+          </div> */}
           {/* work item photo */}
-          <div className="col col-d-6 col-t-6 col-m-12 grid-item photo border-line-h">
+          {/* <div className="col col-d-6 col-t-6 col-m-12 grid-item photo border-line-h">
             <div className="box-item">
               <div className="image">
                 <a href="images/twork3.jpg" className="has-popup-image">
@@ -149,9 +259,9 @@ const RecentWorksFitness = () => {
                 <div className="category">Image</div>
               </div>
             </div>
-          </div>
+          </div> */}
           {/* work item video */}
-          <div className="col col-d-6 col-t-6 col-m-12 grid-item video border-line-h">
+          {/* <div className="col col-d-6 col-t-6 col-m-12 grid-item video border-line-h">
             <div className="box-item">
               <div className="image">
                 <a
@@ -174,9 +284,9 @@ const RecentWorksFitness = () => {
                 <div className="category">Video</div>
               </div>
             </div>
-          </div>
+          </div> */}
           {/* work item photo */}
-          <div className="col col-d-6 col-t-6 col-m-12 grid-item gallery border-line-h">
+          {/* <div className="col col-d-6 col-t-6 col-m-12 grid-item gallery border-line-h">
             <div className="box-item">
               <div className="image">
                 <a href="#gallery-1" className="has-popup-gallery">
@@ -198,9 +308,9 @@ const RecentWorksFitness = () => {
                 <div className="category">Gallery</div>
               </div>
             </div>
-          </div>
+          </div> */}
           {/* work item photo */}
-          <div className="col col-d-6 col-t-6 col-m-12 grid-item gallery border-line-h">
+          {/* <div className="col col-d-6 col-t-6 col-m-12 grid-item gallery border-line-h">
             <div className="box-item">
               <div className="image">
                 <a href="#gallery-2" className="has-popup-gallery">
@@ -222,7 +332,7 @@ const RecentWorksFitness = () => {
                 <div className="category">Gallery</div>
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="clear" />
         </div>
       </div>
