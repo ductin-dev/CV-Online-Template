@@ -483,3 +483,67 @@ export const ResumeSectionClassic = () => {
     </div>
   );
 };
+
+export const ResumeAboutCong = () => {
+  return (
+    <div className="content resume">
+      {/* title */}
+      <div className="title">Resume</div>
+      {/* content */}
+      <div className="row">
+        {/* experience */}
+        <div className="col col-d-6 col-t-6 col-m-12 border-line-v">
+          <div className="resume-title border-line-h">
+            <div className="icon">
+              <i className="ion ion-briefcase" />
+            </div>
+            <div className="name">Experience</div>
+          </div>
+          <div className="resume-items">
+            <div className="resume-item">
+              <div className="date">05-2021 - 09-2021</div>
+              <div className="name">Web Developer</div>
+              <div className="company">FPT software Da Nang</div>
+              <p>Work on a real project with a team in a professional manner. With an LG project, and a website running on the spring boot model.</p>
+            </div>
+          </div>
+        </div>
+        {/* education */}
+        <div className="col col-d-6 col-t-6 col-m-12 border-line-v">
+          <div className="resume-title border-line-h">
+            <div className="icon">
+              <i className="ion ion-university" />
+            </div>
+            <div className="name">Education</div>
+          </div>
+          <div className="resume-items">
+            <div className="resume-item border-line-h">
+              <div className="date">2018 - 2022</div>
+              <div className="name">FPT University</div>
+              <div className="company">Da Nang</div>
+              <p>
+                {`Bachelor's`} Develop your skills as a software developer. Coding a project, project planning, and project implementation are all covered.
+              </p>
+            </div>
+            {/* <div className="resume-item border-line-h">
+              <div className="date">2005 - 2006</div>
+              <div className="name">Programming Course</div>
+              <div className="company">Paris</div>
+              <p>Coursework - Git, WordPress, Javascript, iOS, Android.</p>
+            </div>
+            <div className="resume-item">
+              <div className="date">2004 - 2005</div>
+              <div className="name">Web Design Course</div>
+              <div className="company">London</div>
+              <p>
+                Converted Photoshop layouts to web pages using HTML, CSS, and
+                JavaScript
+              </p>
+            </div> */}
+          </div>
+        </div>
+        <div className="clear" />
+      </div>
+    </div>
+  );
+};

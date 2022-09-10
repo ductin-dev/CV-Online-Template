@@ -987,3 +987,216 @@ export const SkillsClassic = () => {
     </div>
   );
 };
+
+export const SkillsAboutCong = () => {
+  const skills = [
+    { href: "", image: "images/cong_image/c_icon.png", name: "C" },
+    { href: "", image: "images/cong_image/python_icon.png", name: "Python" },
+    { href: "", image: "images/cong_image/java_icon.png", name: "Java" },
+    { href: "", image: "images/cong_image/openGL_icon.png", name: "OpenGL" },
+    { href: "", image: "images/cong_image/springBoot_icon.png", name: "Spring Boot" },
+    // { href: "", image: "images/cong_image/SDL_icon.png", name: "SDL" },
+    { href: "", image: "https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png", name: "Docker" },
+    // { href: "", image: "", name: "Socket.io" },
+  ]
+  return (
+    <div className="content skills">
+      {/* title */}
+      <div className="title">My Skills</div>
+      {/* content */}
+      <div className="row">
+        {/* skill item */}
+        <div className="col col-d-12 col-t-12 col-m-12 border-line-v">
+            <div className="skills-list">
+              <div className="skill-title border-line-h">
+                <div className="icon">
+                  <i className="ion ion-code" />
+                </div>
+                <div className="name">Coding  </div>
+              </div>
+              <div className="content clients p-2" style={{ padding: '4%' }}>
+                {/* content */}
+                <div className="row client-items">
+                  {/* client item */}
+                  {skills.map((item) => (
+                    <div className="col col-d-3 col-t-3 col-m-6 border-line-v">
+                      <div>
+                        <div className="image">
+                          <a
+                            target="_blank"
+                            rel="noreferrer"
+                            href={item.href}
+                          >
+                            <img src={item.image} width={35} height={35} alt="" />
+                          </a>
+                        </div>
+                        <div>
+                          <p className="" style={{ fontSize: '11px' }}>{item.name}</p>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                  <div className="clear" />
+                </div>
+                <div className="moreskills">
+                  <h6>There are also some related skills</h6>
+                  <p>Git, Mysql, Cmake, Hibarnate, SDL2, Data Warehouse..v.v.</p>
+                </div>
+              </div>
+            </div>
+        </div>
+        {/* skill item */}
+        <div className="col col-d-6 col-t-6 col-m-12 border-line-v">
+          <div className="skills-list list">
+            <div className="skill-title border-line-h">
+              <div className="icon">
+                <i className="ion ion-android-list" />
+              </div>
+              <div className="name">Knowledge</div>
+            </div>
+            <ul>
+              <li>
+                <div className="name">Model view controller architecture</div>
+              </li>
+              <li>
+                <div className="name">Entity component system architecture</div>
+              </li>
+              <li>
+                <div className="name">Model view controller architecture</div>
+              </li>
+              <li>
+                <div className="name">Object-oriented programming</div>
+              </li>
+              <li>
+                <div className="name">Project manager</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        {/* skill item */}
+        <div className="col col-d-6 col-t-6 col-m-12 border-line-v">
+          <div className="skills-list dotted">
+            <div className="skill-title border-line-h">
+              <div className="icon">
+                <i className="ion ion-flag" />
+              </div>
+              <div className="name">Languages</div>
+            </div>
+            <ul>
+              <li className="border-line-h">
+                <div className="name">Vietnamese</div>
+              </li>
+              <li className="border-line-h">
+                <div className="name">English</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        {/* skill item */}
+        {/* <div className="col col-d-6 col-t-6 col-m-12 border-line-v">
+          <div className="skills-list">
+            <div className="skill-title border-line-h">
+              <div className="icon">
+                <i className="ion ion-easel" />
+              </div>
+              <div className="name">Design</div>
+            </div>
+            <ul>
+              <li className="border-line-h">
+                <div className="name">Web Developer</div>
+                <div className="progress">
+                  <div className="percentage" style={{ width: "90%" }} />
+                </div>
+              </li>
+              <li>
+                <div className="name">Graphic Design</div>
+                <div className="progress">
+                  <div className="percentage" style={{ width: "85%" }} />
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div> */}
+        {/* skill item */}
+        {/* <div className="col col-d-6 col-t-6 col-m-12 border-line-v">
+          <div className="skills-list circles">
+            <div className="skill-title border-line-h">
+              <div className="icon">
+                <i className="ion ion-code" />
+              </div>
+              <div className="name">Coding</div>
+            </div>
+            <ul>
+              <li>
+                <div className="name">WordPress</div>
+                <div className="progress p90">
+                  <span>90%</span>
+                  <Slice />
+                </div>
+              </li>
+              <li>
+                <div className="name">PHP / MYSQL</div>
+                <div className="progress p75">
+                  <span>75%</span>
+                  <Slice />
+                </div>
+              </li>
+              <li>
+                <div className="name">Angular / JavaScript</div>
+                <div className="progress p85">
+                  <span>85%</span>
+                  <Slice />
+                </div>
+              </li>
+              <li>
+                <div className="name">HTML / CSS</div>
+                <div className="progress p95">
+                  <span>95%</span>
+                  <Slice />
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div> */}
+        {/* skill item */}
+        {/* <div className="col col-d-6 col-t-6 col-m-12 border-line-v">
+          <div className="skills-list list">
+            <div className="skill-title border-line-h">
+              <div className="icon">
+                <i className="ion ion-android-list" />
+              </div>
+              <div className="name">Knowledge</div>
+            </div>
+            <ul>
+              <li>
+                <div className="name">Website hosting</div>
+              </li>
+              <li>
+                <div className="name">iOS and android apps</div>
+              </li>
+              <li>
+                <div className="name">Create logo design</div>
+              </li>
+              <li>
+                <div className="name">Design for print</div>
+              </li>
+              <li>
+                <div className="name">Modern and mobile-ready</div>
+              </li>
+              <li>
+                <div className="name">Advertising services include</div>
+              </li>
+              <li>
+                <div className="name">Graphics and animations</div>
+              </li>
+              <li>
+                <div className="name">Search engine marketing</div>
+              </li>
+            </ul>
+          </div>
+        </div> */}
+        <div className="clear" />
+      </div>
+    </div>
+  );
+};

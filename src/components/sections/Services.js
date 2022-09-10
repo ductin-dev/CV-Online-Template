@@ -23,8 +23,26 @@ const data = [
   },
 ];
 
+const cong_my_services_data = [
+  {
+    icon: "fa fa-code",
+    title: "Web Development",
+    desc: "Modern and mobile-ready website that will help you reach all of your marketing.",
+  },
+  {
+    icon: "fa fa-gamepad",
+    title: "Game Development",
+    desc: "Developing memorable and unique mobile android, ios and video games.",
+  },
+  {
+    icon: "fa fa-microchip",
+    title: "AI Development",
+    desc: "Developing memorable and unique mobile android, ios and video games.",
+  },
+];
+
 const Services = ({ serviceList }) => {
-  const services = serviceList ? serviceList : data;
+  const services = serviceList ? serviceList : cong_my_services_data;
   return (
     <Fragment>
       <div className="content services">

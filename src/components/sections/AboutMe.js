@@ -24,19 +24,19 @@ const AboutMe = ({ bio }) => {
           <div className="col col-d-6 col-t-6 col-m-12 border-line-v">
             <div className="info-list">
               <ul>
-                <li>
-                  <strong>Age . . . . .</strong> 24
-                </li>
-                <li>
-                  <strong>Residence . . . . .</strong> USA
-                </li>
-                <li>
-                  <strong>Freelance . . . . .</strong> Available
-                </li>
-                <li>
-                  <strong>Address . . . . .</strong> London, UK
-                </li>
-              </ul>
+                  <li>
+                    <strong>Age . . . . .</strong> 22
+                  </li>
+                  <li>
+                    <strong>Residence . . . . .</strong> Viet Nam
+                  </li>
+                  <li>
+                    <strong>Freelance . . . . .</strong> Available
+                  </li>
+                  <li>
+                    <strong>Address . . . . .</strong> Da Nang
+                  </li>
+                </ul>
             </div>
           </div>
           <div className="clear" />

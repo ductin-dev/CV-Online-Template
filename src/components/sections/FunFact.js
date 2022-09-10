@@ -174,3 +174,54 @@ export const FunFactClassic = () => {
     </div>
   );
 };
+
+export const FunFactAboutCong = () => {
+  return (
+    <Fragment>
+      <div className="content fuct">
+        {/* title */}
+        <div className="title">Fun Fact</div>
+        {/* content */}
+        <div className="row fuct-items">
+          {/* fuct item */}
+          <div className="col col-d-3 col-t-3 col-m-6 border-line-v">
+            <div className="fuct-item">
+              <div className="icon">
+                <span className="fa fa-music" />
+              </div>
+              <div className="name">like Listen to music</div>
+            </div>
+          </div>
+          {/* fuct item */}
+          <div className="col col-d-3 col-t-3 col-m-6 border-line-v">
+            <div className="fuct-item">
+              <div className="icon">
+                <span className="fa fa-play" />
+              </div>
+              <div className="name">Play Guitar, bamboo flute</div>
+            </div>
+          </div>
+          {/* fuct item */}
+          <div className="col col-d-3 col-t-3 col-m-6 border-line-v">
+            <div className="fuct-item">
+              <div className="icon">
+                <span className="fa fa-coffee" />
+              </div>
+              <div className="name">The maximum number of cups of coffee per day is 4</div>
+            </div>
+          </div>
+          {/* fuct item */}
+          <div className="col col-d-3 col-t-3 col-m-6 border-line-v">
+            <div className="fuct-item">
+              <div className="icon">
+                <span className="fa fa-flag" />
+              </div>
+              <div className="name">Completed climbing a 650m high mountain</div>
+            </div>
+          </div>
+          <div className="clear" />
+        </div>
+      </div>
+    </Fragment>
+  );
+};
