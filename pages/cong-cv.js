@@ -51,7 +51,7 @@ const Index = () => {
           />
           {/* profile titles */}
           <div className="title">Nguyen Duc Cong</div>
-          {/*<div class="subtitle">Web Designer</div>*/}
+          <div class="subtitle">Software Engineering</div>
           <div className="subtitle subtitle-typed">
             <TypingAnimation />
           </div>
@@ -93,7 +93,7 @@ const Index = () => {
 
         </Resume>
         <Work>
-          <RecentWorks />
+          <RecentWorks user={"cong"}/>
         </Work>
         {/* <Blog>
           <BlogSection />

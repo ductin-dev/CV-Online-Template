@@ -3,8 +3,12 @@ import RecentWorksFitness from "./recentWorks/RecentWorksFitness";
 import RecentWorksLawyer from "./recentWorks/RecentWorksLawyer";
 import RecentWorksMusician from "./recentWorks/RecentWorksMusician";
 import RecentWorksWritter from "./recentWorks/RecentWorksWritter";
+import RecentAboutCong from "./recentWorks/RecentAboutCong";
+
 const RecentWorks = ({ user }) => {
   switch (user) {
+    case "cong":
+      return <RecentAboutCong />;
     case "trainer":
       return <RecentWorksFitness />;
     case "lawyer":
