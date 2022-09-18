@@ -37,7 +37,7 @@ COPY --from=builder /app/package.json ./package.json
 
 USER nextjs
 
-EXPOSE 3002
+EXPOSE 3000
 
 # Disable telemetry (Collect user's data)
 ENV NEXT_TELEMETRY_DISABLED 1

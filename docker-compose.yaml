@@ -1,16 +1,16 @@
 version: "3.9"
 
 services:
-  congdaica:
-    image: congdaica:latest
+  test123:
+    image: test123:latest
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: congdaica-container
+    container_name: test123
     restart: always
     volumes:
       - ./:/app
       - /app/node_modules
       - /app/.next
     ports:
-      - "3002:3002"
+      - "3002:3000"
