@@ -137,9 +137,9 @@ const Index5 = () => {
         <Work >
           <RecentWorksFitness />
         </Work>
-        <Blog >
+        {/* <Blog >
           <BlogSection />
-        </Blog>
+        </Blog> */}
         <Contact >
           <ContactInfo />
           {/* <ContactForm /> */}
