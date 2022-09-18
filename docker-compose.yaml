@@ -1,12 +1,12 @@
 version: "3.9"
 
 services:
-  test123:
-    image: test123:latest
+  congdaica:
+    image: congdaica:latest
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: test123
+    container_name: congdaica-container
     restart: always
     volumes:
       - ./:/app
