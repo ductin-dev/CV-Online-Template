@@ -23,6 +23,7 @@ import Work from "../src/components/Work";
 import ContentContainer from "../src/layout/ContentContainer";
 import Header from "../src/layout/Header";
 import Layout from "../src/layout/Layout";
+import image from "../public/images/avatar-profile.jpg";
 
 const RecentWorksFitness = dynamic(
   () => import("../src/components/sections/recentWorks/RecentWorksFitness"),
@@ -93,7 +94,7 @@ const Index5 = () => {
           {/* profile image */}
           <div
             className="slide"
-            style={{ backgroundImage: "url(images/avatar-profile.jpg)" }}
+            style={{ backgroundImage: "url(https://res.cloudinary.com/deqzndnjs/image/upload/v1663639647/samples/avatar-profile_g7wbpa.jpg)" }}
           />
           {/* profile titles */}
           <div className="title">Tran Phi Anh</div>

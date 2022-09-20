@@ -13,7 +13,7 @@ const headerMenus = [
 const Header = ({ noSideBarBtn, menus, animationText }) => {
   const { changeNav, nav, changeSideBar } = useContext(Context);
   useEffect(() => {
-    const sctionScroll = () => {};
+    const sctionScroll = () => { };
     window.addEventListener("scroll", sctionScroll);
   }, []);
 
@@ -22,7 +22,7 @@ const Header = ({ noSideBarBtn, menus, animationText }) => {
   return (
     <header className="header">
       <div className="profile">
-        <div className="title">Ryan Adlard</div>
+        <div className="title">Tran Phi Anh</div>
         <div className="subtitle subtitle-typed">
           <TypingAnimation data={animationText} />
         </div>

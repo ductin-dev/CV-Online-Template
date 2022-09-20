@@ -85,16 +85,16 @@ const RecentWorksFitness = () => {
           <div className="col col-d-6 col-t-6 col-m-12 grid-item photo border-line-h">
             <div className="box-item">
               <div className="image">
-                <a href="images/image-1.jpg" className="has-popup-image">
-                  <img src="images/image-1.jpg" alt="" />
+                <a target="_blank" href="https://res.cloudinary.com/deqzndnjs/image/upload/v1663639663/samples/image-1_burijy.jpg" className="has-popup-image">
+                  <img src="https://res.cloudinary.com/deqzndnjs/image/upload/v1663639663/samples/image-1_burijy.jpg" alt="" />
                   <span className="info">
                     <span className="ion ion-image" />
                   </span>
                 </a>
               </div>
               <div className="desc">
-                <a
-                  href="images/image-1.jpg"
+                <a target="_blank"
+                  href="https://res.cloudinary.com/deqzndnjs/image/upload/v1663639663/samples/image-1_burijy.jpg"
                   className="name has-popup-image"
                 >
                   Akadev IDE LowCode Team
@@ -107,16 +107,16 @@ const RecentWorksFitness = () => {
           <div className="col col-d-6 col-t-6 col-m-12 grid-item photo border-line-h">
             <div className="box-item">
               <div className="image">
-                <a href="images/image-2.jpg" className="has-popup-image">
-                  <img src="images/image-2.jpg" alt="" />
+                <a target="_blank" href="https://res.cloudinary.com/deqzndnjs/image/upload/v1663639664/samples/image-2_pmmeza.jpg" className="has-popup-image">
+                  <img src="https://res.cloudinary.com/deqzndnjs/image/upload/v1663639664/samples/image-2_pmmeza.jpg" alt="" />
                   <span className="info">
                     <span className="ion ion-image" />
                   </span>
                 </a>
               </div>
               <div className="desc">
-                <a
-                  href="images/image-2.jpg"
+                <a target="_blank"
+                  href="https://res.cloudinary.com/deqzndnjs/image/upload/v1663639664/samples/image-2_pmmeza.jpg"
                   className="name has-popup-image"
                 >
                   Team Travel Together
@@ -129,16 +129,16 @@ const RecentWorksFitness = () => {
           <div className="col col-d-6 col-t-6 col-m-12 grid-item photo border-line-h">
             <div className="box-item">
               <div className="image">
-                <a href="images/image-3.jpg" className="has-popup-image">
-                  <img src="images/image-3.jpg" alt="" />
+                <a target="_blank" href="https://res.cloudinary.com/deqzndnjs/image/upload/v1663639664/samples/image-3_rj0mgy.jpg" className="has-popup-image">
+                  <img src="https://res.cloudinary.com/deqzndnjs/image/upload/v1663639664/samples/image-3_rj0mgy.jpg" alt="" />
                   <span className="info">
                     <span className="ion ion-image" />
                   </span>
                 </a>
               </div>
               <div className="desc">
-                <a
-                  href="images/image-3.jpg"
+                <a target="_blank"
+                  href="https://res.cloudinary.com/deqzndnjs/image/upload/v1663639664/samples/image-3_rj0mgy.jpg"
                   className="name has-popup-image"
                 >
                   Me
@@ -151,16 +151,16 @@ const RecentWorksFitness = () => {
           <div className="col col-d-6 col-t-6 col-m-12 grid-item photo border-line-h">
             <div className="box-item">
               <div className="image">
-                <a href="images/image-5.jpg" className="has-popup-image">
-                  <img src="images/image-5.jpg" alt="" />
+                <a target="_blank" href="https://res.cloudinary.com/deqzndnjs/image/upload/v1663639664/samples/image-5_smenf3.jpg" className="has-popup-image">
+                  <img src="https://res.cloudinary.com/deqzndnjs/image/upload/v1663639664/samples/image-5_smenf3.jpg" alt="" />
                   <span className="info">
                     <span className="ion ion-image" />
                   </span>
                 </a>
               </div>
               <div className="desc">
-                <a
-                  href="images/image-5.jpg"
+                <a target="_blank"
+                  href="https://res.cloudinary.com/deqzndnjs/image/upload/v1663639664/samples/image-5_smenf3.jpg"
                   className="name has-popup-image"
                 >
                   F-Complex
@@ -173,16 +173,16 @@ const RecentWorksFitness = () => {
           <div className="col col-d-6 col-t-6 col-m-12 grid-item photo border-line-h">
             <div className="box-item">
               <div className="image">
-                <a href="images/image-6.jpg" className="has-popup-image">
-                  <img src="images/image-6.jpg" alt="" />
+                <a target="_blank" href="https://res.cloudinary.com/deqzndnjs/image/upload/v1663639664/samples/image-6_mhpzss.jpg" className="has-popup-image">
+                  <img src="https://res.cloudinary.com/deqzndnjs/image/upload/v1663639664/samples/image-6_mhpzss.jpg" alt="" />
                   <span className="info">
                     <span className="ion ion-image" />
                   </span>
                 </a>
               </div>
               <div className="desc">
-                <a
-                  href="images/image-6.jpg"
+                <a target="_blank"
+                  href="https://res.cloudinary.com/deqzndnjs/image/upload/v1663639664/samples/image-6_mhpzss.jpg"
                   className="name has-popup-image"
                 >
                   Image
@@ -195,16 +195,16 @@ const RecentWorksFitness = () => {
           <div className="col col-d-6 col-t-6 col-m-12 grid-item photo border-line-h">
             <div className="box-item">
               <div className="image">
-                <a href="images/image-7.jpg" className="has-popup-image">
-                  <img src="images/image-7.jpg" alt="" />
+                <a target="_blank" href="https://res.cloudinary.com/deqzndnjs/image/upload/v1663639664/samples/image-7_n6hsea.jpg" className="has-popup-image">
+                  <img src="https://res.cloudinary.com/deqzndnjs/image/upload/v1663639664/samples/image-7_n6hsea.jpg" alt="" />
                   <span className="info">
                     <span className="ion ion-image" />
                   </span>
                 </a>
               </div>
               <div className="desc">
-                <a
-                  href="images/image-7.jpg"
+                <a target="_blank"
+                  href="https://res.cloudinary.com/deqzndnjs/image/upload/v1663639664/samples/image-7_n6hsea.jpg"
                   className="name has-popup-image"
                 >
                   SATDEVELOP Team
