@@ -6,7 +6,6 @@ WORKDIR /usr/local/app
 
 # Add the source code to app
 COPY package*.json ./usr/local/app/
-COPY package*.lock ./usr/local/app/
 COPY ./ /usr/local/app/
 
 # Install all the dependencies
