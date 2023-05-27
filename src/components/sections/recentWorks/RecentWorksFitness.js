@@ -35,6 +35,18 @@ const RecentWorksFitness = () => {
   };
   const activeBtn = (value) => (value === filterKey ? "active" : "");
 
+  const images = [
+    {
+      url: "https://res.cloudinary.com/deqzndnjs/image/upload/v1663639663/samples/image-1_burijy.jpg",
+      title: "Akadev Team",
+      subTitle: "FPT Complex 2021 - 2022",
+    },
+    {
+      url: "https://res.cloudinary.com/deqzndnjs/image/upload/v1663639664/samples/image-7_n6hsea.jpg",
+      title: "SatDevelop Team",
+      subTitle: "Satdevelop.com",
+    },
+  ];
   return (
     <Fragment>
       <div className="content works">
@@ -82,137 +94,41 @@ const RecentWorksFitness = () => {
         {/* content */}
         <div className="row grid-items border-line-v">
           {/* work item photo */}
-          <div className="col col-d-6 col-t-6 col-m-12 grid-item photo border-line-h">
-            <div className="box-item">
-              <div className="image">
-                <a target="_blank" href="https://res.cloudinary.com/deqzndnjs/image/upload/v1663639663/samples/image-1_burijy.jpg" className="has-popup-image">
-                  <img src="https://res.cloudinary.com/deqzndnjs/image/upload/v1663639663/samples/image-1_burijy.jpg" alt="" />
-                  <span className="info">
-                    <span className="ion ion-image" />
-                  </span>
-                </a>
-              </div>
-              <div className="desc">
-                <a target="_blank"
-                  href="https://res.cloudinary.com/deqzndnjs/image/upload/v1663639663/samples/image-1_burijy.jpg"
-                  className="name has-popup-image"
-                >
-                  Akadev IDE LowCode Team
-                </a>
-                <div className="category">Image</div>
-              </div>
-            </div>
-          </div>
 
-          <div className="col col-d-6 col-t-6 col-m-12 grid-item photo border-line-h">
-            <div className="box-item">
-              <div className="image">
-                <a target="_blank" href="https://res.cloudinary.com/deqzndnjs/image/upload/v1663639664/samples/image-2_pmmeza.jpg" className="has-popup-image">
-                  <img src="https://res.cloudinary.com/deqzndnjs/image/upload/v1663639664/samples/image-2_pmmeza.jpg" alt="" />
-                  <span className="info">
-                    <span className="ion ion-image" />
-                  </span>
-                </a>
-              </div>
-              <div className="desc">
-                <a target="_blank"
-                  href="https://res.cloudinary.com/deqzndnjs/image/upload/v1663639664/samples/image-2_pmmeza.jpg"
-                  className="name has-popup-image"
-                >
-                  Team Travel Together
-                </a>
-                <div className="category">Image</div>
-              </div>
-            </div>
-          </div>
-
-          <div className="col col-d-6 col-t-6 col-m-12 grid-item photo border-line-h">
-            <div className="box-item">
-              <div className="image">
-                <a target="_blank" href="https://res.cloudinary.com/deqzndnjs/image/upload/v1663639664/samples/image-3_rj0mgy.jpg" className="has-popup-image">
-                  <img src="https://res.cloudinary.com/deqzndnjs/image/upload/v1663639664/samples/image-3_rj0mgy.jpg" alt="" />
-                  <span className="info">
-                    <span className="ion ion-image" />
-                  </span>
-                </a>
-              </div>
-              <div className="desc">
-                <a target="_blank"
-                  href="https://res.cloudinary.com/deqzndnjs/image/upload/v1663639664/samples/image-3_rj0mgy.jpg"
-                  className="name has-popup-image"
-                >
-                  Me
-                </a>
-                <div className="category">Image</div>
+          {images.map((el) => (
+            <div
+              className="col col-d-6 col-t-6 col-m-12 grid-item photo border-line-h"
+              key={el}
+            >
+              <div className="box-item">
+                <div className="image">
+                  <a
+                    href={el.url}
+                    className="has-popup-image"
+                  >
+                    <img
+                      src={el.url}
+                      alt="Images"
+                      style={{objectFit: 'cover', width: '250px', height: "250px"}}
+                    />
+                    <span className="info">
+                      <span className="ion ion-image" />
+                    </span>
+                  </a>
+                </div>
+                <div className="desc">
+                  <a
+                    target="_blank"
+                    href={el.url}
+                    className="name has-popup-image"
+                  >
+                    {el.title}
+                  </a>
+                  <div className="category">{el.subTitle}</div>
+                </div>
               </div>
             </div>
-          </div>
-
-          <div className="col col-d-6 col-t-6 col-m-12 grid-item photo border-line-h">
-            <div className="box-item">
-              <div className="image">
-                <a target="_blank" href="https://res.cloudinary.com/deqzndnjs/image/upload/v1663639664/samples/image-5_smenf3.jpg" className="has-popup-image">
-                  <img src="https://res.cloudinary.com/deqzndnjs/image/upload/v1663639664/samples/image-5_smenf3.jpg" alt="" />
-                  <span className="info">
-                    <span className="ion ion-image" />
-                  </span>
-                </a>
-              </div>
-              <div className="desc">
-                <a target="_blank"
-                  href="https://res.cloudinary.com/deqzndnjs/image/upload/v1663639664/samples/image-5_smenf3.jpg"
-                  className="name has-popup-image"
-                >
-                  F-Complex
-                </a>
-                <div className="category">Image</div>
-              </div>
-            </div>
-          </div>
-
-          <div className="col col-d-6 col-t-6 col-m-12 grid-item photo border-line-h">
-            <div className="box-item">
-              <div className="image">
-                <a target="_blank" href="https://res.cloudinary.com/deqzndnjs/image/upload/v1663639664/samples/image-6_mhpzss.jpg" className="has-popup-image">
-                  <img src="https://res.cloudinary.com/deqzndnjs/image/upload/v1663639664/samples/image-6_mhpzss.jpg" alt="" />
-                  <span className="info">
-                    <span className="ion ion-image" />
-                  </span>
-                </a>
-              </div>
-              <div className="desc">
-                <a target="_blank"
-                  href="https://res.cloudinary.com/deqzndnjs/image/upload/v1663639664/samples/image-6_mhpzss.jpg"
-                  className="name has-popup-image"
-                >
-                  Image
-                </a>
-                <div className="category">Image</div>
-              </div>
-            </div>
-          </div>
-
-          <div className="col col-d-6 col-t-6 col-m-12 grid-item photo border-line-h">
-            <div className="box-item">
-              <div className="image">
-                <a target="_blank" href="https://res.cloudinary.com/deqzndnjs/image/upload/v1663639664/samples/image-7_n6hsea.jpg" className="has-popup-image">
-                  <img src="https://res.cloudinary.com/deqzndnjs/image/upload/v1663639664/samples/image-7_n6hsea.jpg" alt="" />
-                  <span className="info">
-                    <span className="ion ion-image" />
-                  </span>
-                </a>
-              </div>
-              <div className="desc">
-                <a target="_blank"
-                  href="https://res.cloudinary.com/deqzndnjs/image/upload/v1663639664/samples/image-7_n6hsea.jpg"
-                  className="name has-popup-image"
-                >
-                  SATDEVELOP Team
-                </a>
-                <div className="category">Image</div>
-              </div>
-            </div>
-          </div>
+          ))}
           {/* work item video */}
           {/* <div className="col col-d-6 col-t-6 col-m-12 grid-item video border-line-h">
             <div className="box-item">

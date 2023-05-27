@@ -1,5 +1,32 @@
 import { Fragment } from "react";
+
+/** Data Info */
+const dataFrontExperience = [
+  "2 years experience HTML, CSS, SASS, Javascript/Typescript.",
+  "2 years experience with ReactJs and NextJs",
+  "Worked with Angular, React Native.",
+  "Experience in setting up environments, debugging, solving problems.",
+  "+1 year experience with libraries like Ant Design, Styled Component, Tailwind Css, etc.",
+];
+
+const dataBackExperience = [
+  "Worked with Nodejs, ExpressJs, GraphQL, Spring boot and NestJs",
+  "Knowledge at Server Side",
+];
+
+const databaseInfo = [
+  "MySQL, MSSQL, MongoDB.",
+  "SQL language, build and manage database.",
+];
+
+const otherInfo = [
+  "Built CI/CD for app, Docker, VPS Experience",
+  "GIT, tool support git like tortoisegit, sourceTree.",
+];
+
+/** Main Section */
 const ResumeSection = () => {
+
   return (
     <Fragment>
       <div className="content resume">
@@ -103,45 +130,45 @@ export const ResumeSectionFitness = () => {
             <div className="name">Experience</div>
           </div>
           <div className="resume-items">
-            <div className="resume-item border-line-h active">
-              {/* <div className="date">2021 - 2022</div> */}
-              <div className="name">Developer</div>
-              <div className="company">FPT Software</div>
-              <p>
-                + Participated in the development of Web projects and built front-end functions of Web applications, IDE platform.
-              </p>
-              <p>
-                + Implement functions and modules base on given requirements.
-              </p>
-              <p>
-                + Developing a LowCode platform for developer used in their products.
-              </p>
-              <p>
-                + Maintain, optimize code and enhance ongoing products.
-              </p>
-            </div>
             <div className="resume-item border-line-h">
               {/* <div className="date">2021 - 2022</div> */}
               <div className="name">Front-End developer</div>
               {/* <div className="company">FPT Software - IDE Low-code(Akadev)</div> */}
-              <p>
-                Having above 1-year experience in developing Front-End application using ReactJs, Angular. Experience about normal task is design, developent new story, fix bugs, reformatting code for make simple, clear, not duplication.
-              </p>
+              <ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+                {dataFrontExperience.map((el) => (
+                  <li>{el}</li>
+                ))}
+              </ul>
             </div>
             <div className="resume-item border-line-h">
               {/* <div className="date">2021 - 2022</div> */}
               <div className="name">Back-End developer</div>
               {/* <div className="company">FPT University - IDE Low-code(Akadev)</div> */}
-              <p>
-                Knowledge of OOP, Rest API architecture style, design patterns, security...
-              </p>
+              <ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+                {dataBackExperience.map((el) => (
+                  <li>{el}</li>
+                ))}
+              </ul>
             </div>
+
+            <div className="resume-item border-line-h">
+              {/* <div className="date">2021 - 2022</div> */}
+              <div className="name">Other</div>
+              {/* <div className="company">FPT University - IDE Low-code(Akadev)</div> */}
+              <ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+                {otherInfo.map((el) => (
+                  <li key={el}>{el}</li>
+                ))}
+              </ul>
+            </div>
+
             <div className="resume-item border-line-h">
               {/* <div className="date">2021 - 2022</div> */}
               <div className="name">Team Work, Communication</div>
               {/* <div className="company">FPT University - IDE Low-code(Akadev)</div> */}
               <p>
-                Can read and understand English well, basic English communication. More than 1 year of team work experience.
+                Can read and understand English well, basic English
+                communication.
               </p>
             </div>
           </div>
@@ -160,14 +187,18 @@ export const ResumeSectionFitness = () => {
               <div className="name">Quang Tri Town High school</div>
               <div className="company">Quang Tri</div>
               <p>
-                As a famous school number 1 in Quang Tri, there are many academic achievements as well as great programs of VTV.
+                As a famous school number 1 in Quang Tri, there are many
+                academic achievements as well as great programs of VTV.
               </p>
             </div>
             <div className="resume-item border-line-h">
               <div className="date">2018 - 2022</div>
               <div className="name">FPT University</div>
               <div className="company">DaNang</div>
-              <p>FPT University is a private university with main campus in Da Nang belonging to FPT Corporation.</p>
+              <p>
+                FPT University is a private university with main campus in Da
+                Nang belonging to FPT Corporation.
+              </p>
             </div>
           </div>
         </div>
