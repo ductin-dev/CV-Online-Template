@@ -1,16 +1,11 @@
-version: "3.9"
+version: "3.8"
 
 services:
-  congdaica:
-    image: congdaica:latest
-    build:
-      context: .
-      dockerfile: Dockerfile
-    container_name: congdaica-container
-    restart: always
-    volumes:
-      - ./:/app
-      - /app/node_modules
-      - /app/.next
+  client:
+    container_name: CongDaiCa-FE
+    build: .
+  nginx:
+    container_name: CongDaiCa-Nginx-Client
+    build: ./nginx
     ports:
-      - "3002:3000"
+      - 3004:80
