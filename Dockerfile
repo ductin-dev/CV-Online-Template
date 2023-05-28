@@ -1,5 +1,5 @@
 # Stage 1: Compile and Build
-FROM node:alpine as build
+FROM node:18-alpine as build
 
 # Set the working directory
 WORKDIR /usr/local/app
