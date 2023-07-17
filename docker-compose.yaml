@@ -2,10 +2,11 @@ version: "3.8"
 
 services:
     client:
-        container_name: PhiAnhCV-FE
+        container_name: phianhcv-fe
+        image: phianhcv:latest
         build: .
     nginx:
-        container_name: PhiAnhCV-Nginx-Client
+        container_name: phianhcv-nginx-client
         build: ./nginx
         ports:
             - 3003:80

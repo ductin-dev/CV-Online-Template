@@ -57,6 +57,7 @@ const services = [
   },
 ];
 const animationText = [
+  "Back-end Developer",
   "Front-end Developer",
   "Freelancer",
   "Programmer",

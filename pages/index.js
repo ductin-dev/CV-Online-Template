@@ -46,7 +46,7 @@ company.
 const serviceList = [
   {
     icon: "fa fa-building-o",
-    title: "Corize INC Developer",
+    title: "FPT Software Developer",
     desc: "Participated in the development of Web projects and built front-end functions of Web applications. Maintain, optimize code and enhance ongoing products",
   },
   {
@@ -109,12 +109,12 @@ const Index5 = () => {
               <span className="fa fa-facebook-f" title="Facebook" />
             </a>
             <a target="_blank" rel="noreferrer" href="https://soundcloud.com/tr-n-phi-anh-900810560">
-              <span className="fa fa-linkedin" title="Sound Cloud" />
+              <span className="fa fa-soundcloud" title="Sound Cloud" />
             </a>
           </div>
           {/* profile buttons */}
           <div className="lnks">
-            <a href="https://www.linkedin.com/in/fininan-tran-86260325b" target="_blank" className="lnk discover">
+            <a href="https://www.facebook.com/messages/t/100015031178777" target="_blank" className="lnk discover">
               <span className="text">Contact Me</span>
               <span className="ion ion-paper-airplane" />
             </a>

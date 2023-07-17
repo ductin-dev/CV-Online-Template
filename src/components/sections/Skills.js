@@ -193,13 +193,11 @@ export const SkillsFitness = () => {
     { href: "", image: "https://w7.pngwing.com/pngs/915/519/png-transparent-typescript-hd-logo-thumbnail.png", name: "Typescript" },
     { href: "", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png", name: "ReactJs, React native" },
     { href: "", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png", name: "Angular" },
+    { href: "", image: "https://miro.medium.com/max/856/1*O68LbDvD5Dcsnez73M7v4Q.png", name: "Spring Boot" },
+    { href: "", image: "https://stackjava.com/wp-content/uploads/2018/07/mongodb.png", name: "MongoDb" },
     { href: "", image: "https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png", name: "Docker" },
-    { href: "", image: "https://cdn.icon-icons.com/icons2/2148/PNG/512/nextjs_icon_132160.png", name: "NextJs" },
-    { href: "", image: "https://docs.nestjs.com/assets/logo-small.svg", name: "NestJs" },
-    { href: "", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/1200px-GraphQL_Logo.svg.png", name: "GraphQL" },
+    { href: "", image: "https://upload.wikimedia.org/wikipedia/commons/9/96/Socket-io.svg", name: "Socket.io" },
   ]
-
-  const skillRelates = "Git, Firebase, Database, VPS Cloud, Figma..."
   return (
     <Fragment>
       <div className="content skills">
@@ -234,7 +232,7 @@ export const SkillsFitness = () => {
             </div>
             <div className="moreskills">
               <h6>There are also some related skills: </h6>
-              <p>{skillRelates}</p>
+              <p>Git, Redux, Firebase, Mysql, Sqlsv, HTML5, CSS, SASS..v.v.</p>
             </div>
           </div>
           {/* skill item */}
@@ -254,7 +252,7 @@ export const SkillsFitness = () => {
                   </div> */}
                 </li>
                 <li className="border-line-h">
-                  <div className="name">Good at English</div>
+                  <div className="name">English</div>
                   {/* <div className="progress">
                     <div className="percentage" style={{ width: "60%" }} />
                   </div> */}
@@ -277,7 +275,7 @@ export const SkillsFitness = () => {
                   <div className="name">Object-oriented programming, Singleton, Mvc architecture, Java, Spring boot...</div>
                 </li>
                 <li>
-                  <div className="name">HTML, CSS, Sass, Javascript, Typescript, ReactJs, React Native, Angular, NextJs
+                  <div className="name">HTML, CSS, Sass, Javascript, Typescript, ReactJs, React Native, Angular
                   </div>
                 </li>
                 <li>

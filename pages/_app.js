@@ -19,7 +19,7 @@ function MyApp({ Component, pageProps }) {
         <link rel="stylesheet" href="css/animate.css" />
         <link rel="stylesheet" href="css/gradient.css" />
 
-        <title>Trần Phi Anh</title>
+        <title>Tran Phi Anh</title>
         <link rel="shortcut icon" href="images/favicons/favicon.ico" />
       </Head>
       <PreLoader />
