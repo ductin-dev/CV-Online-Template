@@ -4,14 +4,6 @@
 @import url('setting.less');
 
 
-/**
-*	Ryan - Resume/CV/vCard Template (HTML)
-*	Version: 2.6
-*	Author: bslthemes
-*	Author URL: http://themeforest.net/user/bslthemes
-*	Copyright © RyanCV by bslthemes. All Rights Reserved.
-**/
-
 
 /* TABLE OF CONTENTS
 	1. Base
@@ -30,7 +22,7 @@
 */
 
 html {
-	margin-right: 0!important;
+	margin-right: 0 !important;
 }
 
 body {
@@ -52,6 +44,7 @@ body {
 	overflow: hidden;
 	width: 100%;
 	height: 100%;
+
 	@media (max-width: 1023px) {
 		overflow: visible;
 	}
@@ -76,16 +69,20 @@ body {
 	height: 600px;
 	.transform(translateX(0px));
 	.transition(all 0.4s ease 0s);
+
 	&.opened {
 		.transform(translateX(-240px));
 	}
+
 	@media (max-width: 1072px) {
 		margin: -300px 0 0 -220px;
 		width: 440px;
+
 		&.opened {
 			.transform(translateX(-204px));
 		}
 	}
+
 	@media (max-width: 1023px) {
 		margin: 0 auto;
 		position: relative;
@@ -95,10 +92,12 @@ body {
 		max-width: 540px;
 		height: auto;
 		.transform(none);
+
 		&.opened {
 			.transform(none);
 		}
 	}
+
 	@media (max-width: 560px) {
 		margin: 0 5px;
 		top: 78px;
@@ -128,131 +127,170 @@ body {
 	margin: 0 -20px;
 	position: relative;
 	font-size: 0;
+
 	.col {
 		padding: 20px;
 		position: relative;
 		display: inline-block;
 		vertical-align: top;
 		font-size: @default-size;
+
 		.col {
 			padding-top: 0;
 			padding-bottom: 20px;
 		}
+
 		@media (min-width: 1024px) {
 			&.col-d-12 {
 				width: 99.996%;
 			}
+
 			&.col-d-11 {
 				width: 91.663%;
 			}
+
 			&.col-d-10 {
 				width: 83.333%;
 			}
+
 			&.col-d-9 {
 				width: 74.997%;
 			}
+
 			&.col-d-8 {
 				width: 66.664%;
 			}
+
 			&.col-d-7 {
 				width: 58.331%;
 			}
+
 			&.col-d-6 {
 				width: 49.998%;
 			}
+
 			&.col-d-5 {
 				width: 41.665%;
 			}
+
 			&.col-d-4 {
 				width: 33.332%;
 			}
+
 			&.col-d-3 {
 				width: 24.999%;
 			}
+
 			&.col-d-2 {
 				width: 16.666%;
 			}
+
 			&.col-d-1 {
 				width: 8.333%;
 			}
 		}
+
 		@media (max-width: 1023px) {
 			&.col-t-12 {
 				width: 99.996%;
 			}
+
 			&.col-t-11 {
 				width: 91.663%;
 			}
+
 			&.col-t-10 {
 				width: 83.333%;
 			}
+
 			&.col-t-9 {
 				width: 74.997%;
 			}
+
 			&.col-t-8 {
 				width: 66.664%;
 			}
+
 			&.col-t-7 {
 				width: 58.331%;
 			}
+
 			&.col-t-6 {
 				width: 49.998%;
 			}
+
 			&.col-t-5 {
 				width: 41.665%;
 			}
+
 			&.col-t-4 {
 				width: 33.332%;
 			}
+
 			&.col-t-3 {
 				width: 24.999%;
 			}
+
 			&.col-t-2 {
 				width: 16.666%;
 			}
+
 			&.col-t-1 {
 				width: 8.333%;
 			}
 		}
+
 		@media (max-width: 560px) {
 			&.col-m-12 {
 				width: 99.996%;
 			}
+
 			&.col-m-11 {
 				width: 91.663%;
 			}
+
 			&.col-m-10 {
 				width: 83.333%;
 			}
+
 			&.col-m-9 {
 				width: 74.997%;
 			}
+
 			&.col-m-8 {
 				width: 66.664%;
 			}
+
 			&.col-m-7 {
 				width: 58.331%;
 			}
+
 			&.col-m-6 {
 				width: 49.998%;
 			}
+
 			&.col-m-5 {
 				width: 41.665%;
 			}
+
 			&.col-m-4 {
 				width: 33.332%;
 			}
+
 			&.col-m-3 {
 				width: 24.999%;
 			}
+
 			&.col-m-2 {
 				width: 16.666%;
 			}
+
 			&.col-m-1 {
 				width: 8.333%;
 			}
 		}
 	}
+
 	&:after {
 		content: '';
 		display: block;
@@ -268,9 +306,9 @@ body {
 		top: 0;
 		width: 1px;
 		height: 100%;
-		background: -moz-radial-gradient(top, ellipse cover, rgba(197,202,213,0.7) 0%, rgba(255,255,255,0) 70%);
-		background: -webkit-radial-gradient(top, ellipse cover, rgba(197,202,213,0.7) 0%,rgba(255,255,255,0) 70%);
-		background: radial-gradient(ellipse at top, rgba(197,202,213,0.7) 0%,rgba(255,255,255,0) 70%);
+		background: -moz-radial-gradient(top, ellipse cover, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+		background: -webkit-radial-gradient(top, ellipse cover, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+		background: radial-gradient(ellipse at top, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
 	}
 }
 
@@ -282,9 +320,9 @@ body {
 		bottom: 0;
 		width: 100%;
 		height: 1px;
-		background: -moz-radial-gradient(left, ellipse cover, rgba(197,202,213,0.7) 0%, rgba(255,255,255,0) 70%);
-		background: -webkit-radial-gradient(left, ellipse cover, rgba(197,202,213,0.7) 0%,rgba(255,255,255,0) 70%);
-		background: radial-gradient(ellipse at left, rgba(197,202,213,0.7) 0%,rgba(255,255,255,0) 70%);
+		background: -moz-radial-gradient(left, ellipse cover, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+		background: -webkit-radial-gradient(left, ellipse cover, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+		background: radial-gradient(ellipse at left, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
 	}
 }
 
@@ -295,19 +333,22 @@ body {
 
 .preloader {
 	position: fixed;
-	top:0;
-	left:0;
+	top: 0;
+	left: 0;
 	width: 100%;
 	height: 100%;
 	text-align: center;
 	background: @white-color;
 	z-index: 1000;
+
 	.spinner {
 		position: relative;
 		display: inline-block;
 		width: 40px;
 		height: 40px;
-		.double-bounce1, .double-bounce2 {
+
+		.double-bounce1,
+		.double-bounce2 {
 			position: absolute;
 			top: 0;
 			left: 0;
@@ -319,6 +360,7 @@ body {
 			animation: sk-bounce 2.0s infinite ease-in-out;
 			.border-radius(50%);
 		}
+
 		.double-bounce2 {
 			-webkit-animation-delay: -1.0s;
 			animation-delay: -1.0s;
@@ -332,7 +374,12 @@ body {
 	5. Typography
 */
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	margin: 0 0 5px 0;
 	font-family: @default-font;
 	font-size: @h1-size;
@@ -380,6 +427,7 @@ strong {
 	width: 100%;
 	height: 70px;
 	z-index: 10;
+
 	&:before {
 		content: '';
 		position: absolute;
@@ -387,13 +435,14 @@ strong {
 		top: 0;
 		width: 100%;
 		height: 1px;
-		background: -moz-radial-gradient(left, ellipse cover, rgba(197,202,213,0.7) 0%, rgba(255,255,255,0) 70%);
-		background: -webkit-radial-gradient(left, ellipse cover, rgba(197,202,213,0.7) 0%,rgba(255,255,255,0) 70%);
-		background: radial-gradient(ellipse at left, rgba(197,202,213,0.7) 0%,rgba(255,255,255,0) 70%);
+		background: -moz-radial-gradient(left, ellipse cover, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+		background: -webkit-radial-gradient(left, ellipse cover, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+		background: radial-gradient(ellipse at left, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
 	}
 }
 
-.lnk, .button {
+.lnk,
+.button {
 	position: relative;
 	float: left;
 	width: 50%;
@@ -406,6 +455,7 @@ strong {
 	text-decoration: none;
 	text-transform: uppercase;
 	border: none;
+
 	&:before {
 		content: '';
 		position: absolute;
@@ -413,11 +463,13 @@ strong {
 		top: 0;
 		width: 1px;
 		height: 100%;
-		background: -moz-radial-gradient(top, ellipse cover, rgba(197,202,213,0.7) 0%, rgba(255,255,255,0) 70%);
-		background: -webkit-radial-gradient(top, ellipse cover, rgba(197,202,213,0.7) 0%,rgba(255,255,255,0) 70%);
-		background: radial-gradient(ellipse at top, rgba(197,202,213,0.7) 0%,rgba(255,255,255,0) 70%);
+		background: -moz-radial-gradient(top, ellipse cover, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+		background: -webkit-radial-gradient(top, ellipse cover, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+		background: radial-gradient(ellipse at top, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
 	}
-	.ion, .arrow {
+
+	.ion,
+	.arrow {
 		margin: 0 0 0 8px;
 		position: relative;
 		top: -2px;
@@ -426,11 +478,14 @@ strong {
 		font-size: @small-icon-size;
 		.transition(all 0.3s ease 0s);
 	}
+
 	.arrow {
 		top: -1px;
 		width: 14px;
 		height: 2px;
-		&:before, &:after {
+
+		&:before,
+		&:after {
 			content: '';
 			position: absolute;
 			left: 0;
@@ -440,6 +495,7 @@ strong {
 			background: @dark-color;
 			.transition(all 0.3s ease 0s);
 		}
+
 		&:after {
 			left: auto;
 			top: auto;
@@ -450,21 +506,28 @@ strong {
 			.transform(rotate(45deg));
 		}
 	}
+
 	.text {
 		.transition(all 0.3s ease 0s);
 	}
+
 	&:last-child {
 		&:before {
 			display: none;
 		}
 	}
+
 	&:hover {
 		color: @active-color;
+
 		.ion {
 			color: @active-color;
 		}
+
 		.arrow {
-			&:before, &:after {
+
+			&:before,
+			&:after {
 				background: @active-color;
 			}
 		}
@@ -482,6 +545,7 @@ a {
 	text-decoration: none;
 	opacity: 1;
 	outline: none;
+
 	&:hover {
 		text-decoration: none;
 		color: @active-color;
@@ -489,7 +553,8 @@ a {
 }
 
 /* lists */
-ol, ul {
+ol,
+ul {
 	list-style: none;
 	margin-top: 0px;
 	margin-bottom: 0px;
@@ -572,6 +637,7 @@ button {
 	outline: 0;
 	.transition(all 0.3s ease 0s);
 	.border-radius(0px);
+
 	&:focus {
 		color: @dark-color;
 		border-bottom: @form-border-hover;
@@ -591,12 +657,14 @@ button {
 	border-bottom: @form-border;
 	text-align: left;
 	cursor: pointer;
+
 	&:hover {
 		border-bottom: @form-border-hover;
 	}
 }
 
-label, legend {
+label,
+legend {
 	display: block;
 	padding-bottom: 10px;
 	font-family: @default-font;
@@ -629,28 +697,33 @@ input[type="radio"] {
 	color: @extra-color;
 }
 
-input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
 	color: @dark-color;
 }
 
-input:focus:-moz-placeholder, textarea:focus:-moz-placeholder {
+input:focus:-moz-placeholder,
+textarea:focus:-moz-placeholder {
 	color: @dark-color;
 }
 
-input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder {
 	color: @dark-color;
 }
 
-input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder {
+input:focus:-ms-input-placeholder,
+textarea:focus:-ms-input-placeholder {
 	color: @dark-color;
 }
 
-input.error, textarea.error {
-	border-bottom: 1px solid @error-color!important;
+input.error,
+textarea.error {
+	border-bottom: 1px solid @error-color !important;
 }
 
 label.error {
-	display: none!important;
+	display: none !important;
 }
 
 input.error::-moz-placeholder,
@@ -789,15 +862,18 @@ textarea.error::-webkit-input-placeholder {
 		animation-timing-function: ease-in;
 		opacity: 0;
 	}
+
 	60% {
 		-webkit-transform: perspective(400px) rotate3d(0, 1, 0, 0deg);
 		transform: perspective(400px) rotate3d(0, 1, 0, 0deg);
 		opacity: 1;
 	}
+
 	80% {
 		-webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
 		transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
 	}
+
 	to {
 		-webkit-transform: perspective(400px);
 		transform: perspective(400px);
@@ -812,15 +888,18 @@ textarea.error::-webkit-input-placeholder {
 		animation-timing-function: ease-in;
 		opacity: 0;
 	}
+
 	60% {
 		-webkit-transform: perspective(400px) rotate3d(0, 1, 0, 0deg);
 		transform: perspective(400px) rotate3d(0, 1, 0, 0deg);
 		opacity: 1;
 	}
+
 	80% {
 		-webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
 		transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
 	}
+
 	to {
 		-webkit-transform: perspective(400px);
 		transform: perspective(400px);
@@ -841,11 +920,13 @@ textarea.error::-webkit-input-placeholder {
 		-webkit-transform: perspective(400px);
 		transform: perspective(400px);
 	}
+
 	30% {
 		-webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
 		transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
 		opacity: 1;
 	}
+
 	to {
 		-webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
 		transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
@@ -858,11 +939,13 @@ textarea.error::-webkit-input-placeholder {
 		-webkit-transform: perspective(400px);
 		transform: perspective(400px);
 	}
+
 	30% {
 		-webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
 		transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
 		opacity: 1;
 	}
+
 	to {
 		-webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
 		transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
@@ -872,19 +955,26 @@ textarea.error::-webkit-input-placeholder {
 
 /* preloader */
 @-webkit-keyframes sk-bounce {
-	0%, 100% {
+
+	0%,
+	100% {
 		-webkit-transform: scale(0.0)
 	}
+
 	50% {
 		-webkit-transform: scale(1.0)
 	}
 }
 
 @keyframes sk-bounce {
-	0%, 100% {
+
+	0%,
+	100% {
 		transform: scale(0.0);
 		-webkit-transform: scale(0.0);
-	} 50% {
+	}
+
+	50% {
 		transform: scale(1.0);
 		-webkit-transform: scale(1.0);
 	}

@@ -1,11 +1,3 @@
-/**
-*	Ryan - Resume/CV/vCard Template (HTML)
-*	Version: 2.6
-*	Author: bslthemes
-*	Author URL: http://themeforest.net/user/bslthemes
-*	Copyright © RyanCV by bslthemes. All Rights Reserved.
-**/
-
 /* TABLE OF CONTENTS
 	1. Template Purple
 */
@@ -156,11 +148,11 @@ button:hover {
 */
 
 .skills-list.list ul li .name:before {
-  color: #c446da;
+	color: #c446da;
 }
 
 .skills-list.dotted ul li .progress .da span {
-  background: #c446da!important;
+	background: #c446da !important;
 }
 
 .skills-list.circles .progress .bar,
@@ -214,48 +206,48 @@ button:hover {
 .skills-list.circles .progress.p98 .fill,
 .skills-list.circles .progress.p99 .fill,
 .skills-list.circles .progress.p100 .fill {
-  border: 0.09em solid #c446da;
+	border: 0.09em solid #c446da;
 }
 
 input:focus,
 textarea:focus {
-  border-color: #c446da;
+	border-color: #c446da;
 }
 
 .card-started .profile .subtitle,
 .card-started .profile .typed-cursor {
-  color: #c446da;
+	color: #c446da;
 }
 
 .content .title .first-word {
-  color: #c446da;
+	color: #c446da;
 }
 
 .content .title::first-letter,
 .content .title .first-letter::first-letter {
-  color: #c446da;
+	color: #c446da;
 }
 
 .new-skin .service-items .service-item .icon {
-  background: #c446da!important;
+	background: #c446da !important;
 }
 
 .resume-items .resume-item.active .date {
-  border-color: #c446da;
+	border-color: #c446da;
 }
 
 .box-item:hover .desc .name {
-  color: #c446da;
+	color: #c446da;
 }
 
 .new-skin .info-list ul li strong {
-  background: #c446da;
+	background: #c446da;
 }
 
 .revs-carousel .owl-dots .owl-dot {
-  border-color: #c446da;
+	border-color: #c446da;
 }
 
 .revs-carousel .owl-dot.active {
-  background: #c446da;
+	background: #c446da;
 }

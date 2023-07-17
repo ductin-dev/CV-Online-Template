@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+    client:
+        container_name: ductincv-fe
+        image: ductincv:latest
+        build: .
+    nginx:
+        container_name: ductincv-nginx-client
+        build: ./nginx
+        ports:
+            - 3001:80

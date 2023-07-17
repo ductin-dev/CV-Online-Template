@@ -1,35 +1,12 @@
-/**
-*	Ryan - Resume/CV/vCard Template (HTML)
-*	Version: 2.6
-*	Author: bslthemes
-*	Author URL: http://themeforest.net/user/bslthemes
-*	Copyright © RyanCV by bslthemes. All Rights Reserved.
-**/
-
-/* TABLE OF CONTENTS
-	1. Base
-	2. Container
-	3. Columns
-	4. Preloader
-	5. Typography
-	6. Forms
-	7. Alignments
-	8. Animations
-*/
-
-/*
-	1. Basic
-*/
-
 html {
-	margin-right: 0!important;
+	margin-right: 0 !important;
 }
 
 body {
 	margin: 0;
 	padding: 0;
 	border: none;
-	font-family: 'Poppins';
+	font-family: 'Poppins', 'Aria';
 	font-size: 14px;
 	color: #626262;
 	background: #d8dbe2;
@@ -406,7 +383,7 @@ h4,
 h5,
 h6 {
 	margin: 0 0 5px 0;
-	font-family: 'Poppins';
+	font-family: 'Poppins', 'Aria';
 	font-size: 25px;
 	color: #171717;
 	line-height: 33px;
@@ -621,7 +598,7 @@ li {
 code {
 	background: #d8dbe2;
 	font-size: 16px;
-	font-family: 'Poppins';
+	font-family: 'Poppins', 'Aria';
 	margin: 20px 0;
 	padding: 10px 20px;
 }
@@ -653,7 +630,7 @@ td {
 
 /* blockquote */
 blockquote {
-	font-family: 'Poppins';
+	font-family: 'Poppins', 'Aria';
 }
 
 /*
@@ -665,7 +642,7 @@ button {
 	margin: 0;
 	padding: 0;
 	display: block;
-	font-family: 'Poppins';
+	font-family: 'Poppins', 'Aria';
 	font-size: 13px;
 	width: 100%;
 	height: 60px;
@@ -718,7 +695,7 @@ label,
 legend {
 	display: block;
 	padding-bottom: 10px;
-	font-family: 'Poppins';
+	font-family: 'Poppins', 'Aria';
 	font-size: 14px;
 }
 
@@ -774,7 +751,7 @@ textarea.error {
 }
 
 label.error {
-	display: none!important;
+	display: none !important;
 }
 
 input.error::-moz-placeholder,
@@ -1006,6 +983,7 @@ textarea.error::-webkit-input-placeholder {
 
 /* preloader */
 @-webkit-keyframes sk-bounce {
+
 	0%,
 	100% {
 		-webkit-transform: scale(0);
@@ -1018,6 +996,7 @@ textarea.error::-webkit-input-placeholder {
 }
 
 @keyframes sk-bounce {
+
 	0%,
 	100% {
 		transform: scale(0);
