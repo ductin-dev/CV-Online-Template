@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  giangcv-fe:
+    container_name: GiangCV-FE
+    build:
+      context: ./
+    ports:
+      - "3002:3000"
+    environment:
+      - TZ=Asia/Ho_Chi_Minh
+    restart: unless-stopped

@@ -3,6 +3,7 @@
 @import "swiper/css/navigation";
 @import "swiper/css/pagination";
 @import "swiper/css/scrollbar";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700&display=swap');
 
 html {
   scroll-behavior: smooth;
@@ -27,21 +28,24 @@ html {
 /* image popup */
 img.mfp-img {
   box-shadow: 0 0 8px rgb(0 0 0 / 60%);
-  position: absolute;
-  /* max-height: 392px; */
-  width: 100%;
+  position: fixed;
+  max-height: 650px;
+  width: fit-content;
   padding: 0 !important;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 .mfp-img-container .mfp-content {
   max-width: 400px !important;
 }
+
 .mfp-img-container .mfp-close {
   top: -110px;
   right: -24px;
 }
+
 /* .mfp-content {
   height: 100%;
 } */
@@ -54,10 +58,18 @@ img.mfp-img {
 .mfp-wrap {
   position: unset;
 }
+
 .content_popup_warp.mfp-wrap.popup-box-inline {
+  height: fit-content;
   margin: auto;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+@media (max-width: 700px) {
+  img.mfp-img {
+    max-height: 90vh;
+  }
 }

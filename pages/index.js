@@ -1,115 +1,91 @@
-import dynamic from "next/dynamic";
-import Head from "next/head";
-import About from "../src/components/About";
-import Blog from "../src/components/Blog";
-import Contact from "../src/components/Contact";
-import Home from "../src/components/Home";
-import Resume from "../src/components/Resume";
-import AboutMe from "../src/components/sections/AboutMe";
-import BlogSection from "../src/components/sections/Blog";
-import Clients from "../src/components/sections/Clients";
-import ContactForm from "../src/components/sections/ContactForm";
-import ContactInfo from "../src/components/sections/ContactInfo";
-import FunFact from "../src/components/sections/FunFact";
-import Pricing from "../src/components/sections/Pricing";
-import Quote from "../src/components/sections/Quote";
-import ResumeSection from "../src/components/sections/Resume";
-import Services from "../src/components/sections/Services";
-import Skills from "../src/components/sections/Skills";
-import Testimonials from "../src/components/sections/Testimonials";
-import TypingAnimation from "../src/components/TypingAnimation";
-import Work from "../src/components/Work";
 import ContentContainer from "../src/layout/ContentContainer";
 import Header from "../src/layout/Header";
 import Layout from "../src/layout/Layout";
-const RecentWorks = dynamic(
-  () => import("../src/components/sections/RecentWorks"),
-  {
-    ssr: false,
-  }
-);
-const bio = `<p>
-I am Ryan Adlard, web designer from USA, California. I have rich experience in
-web site design and building and customization, also I am good at wordpress.
-I love to talk with you about our unique.
-</p>`;
-const IndexDark = () => {
+
+import About from "../src/components/About";
+import Contact from "../src/components/Contact";
+import Home from "../src/components/Home";
+import Resume from "../src/components/Resume";
+import TypingAnimation from "../src/components/TypingAnimation";
+import Work from "../src/components/Work";
+
+import AboutMe from "../src/components/giangmtm/AboutMe";
+import Services from "../src/components/giangmtm/Services";
+import Testimonials from "../src/components/giangmtm/Testimonials";
+import Achievement from "../src/components/giangmtm/Achievement";
+import ResumeSection from "../src/components/giangmtm/Resume";
+import RecentWorksWritter from "../src/components/giangmtm/RecentWorksWritter";
+import ContactForm from "../src/components/giangmtm/ContactForm";
+import ContactInfo from "../src/components/giangmtm/ContactInfo";
+import Skills from "../src/components/giangmtm/Skills";
+import ProductList from "../src/components/giangmtm/ProductList";
+import Product from "../src/components/Product";
+
+import styles from "./styles.module.css";
+
+const animationText = [
+  "Content Writer Specialist",
+  "Talent Acquisition | Recruiter",
+];
+
+const Index = () => {
+
   return (
     <Layout bg={"blured"}>
-      <Head>
-        <link rel="stylesheet" href="css/new-skin/new-skin.css" />
-        <link rel="stylesheet" href="css/template-dark/dark.css" />
-        <link rel="stylesheet" href="css/new-skin/minimal-skin.css" />
-      </Head>
-      <Header />
+      <Header noSideBarBtn animationText={animationText} />
       <Home>
         <div className="profile no-photo">
+          {/* profile image */}
           <div
             className="slide"
-            style={{ backgroundImage: "url(images/avatar1.jpg)" }}
+            style={{ backgroundImage: "url(images/giang-avatar1new.jpg)" }}
           />
-          <div className="title">Ryan Adlard 1</div>
-          <TypingAnimation />
-          <div className="social">
-            <a target="_blank" rel="noreferrer" href="https://dribbble.com/">
-              <span className="fa fa-dribbble" />
+          {/* profile titles */}
+          <div className="title">Mai Thi My Giang</div>
+
+          <TypingAnimation data={animationText} />
+          {/* profile socials */}
+          <div className={`${styles.social_link_container}`}>
+            <a className={`${styles.social_link_item} ${styles.social_link_fb}`} target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/mỹ-giang-b50411227/">
+              <span className="fa fa-linkedin" />
             </a>
-            <a target="_blank" rel="noreferrer" href="https://twitter.com/">
-              <span className="fa fa-twitter" />
-            </a>
-            <a target="_blank" rel="noreferrer" href="https://github.com/">
-              <span className="fa fa-github" />
-            </a>
-            <a target="_blank" rel="noreferrer" href="https://www.spotify.com/">
-              <span className="fa fa-spotify" />
-            </a>
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://stackoverflow.com/"
-            >
-              <span className="fa fa-stack-overflow" />
+            <a className={`${styles.social_link_item} ${styles.social_link_fb}`} target="_blank" rel="noreferrer" href="https://www.facebook.com/mai.giang.12177">
+              <span className="fa fa-facebook" />
             </a>
           </div>
           {/* profile buttons */}
           <div className="lnks">
-            <a href="#" className="lnk">
+            <a href="https://drive.google.com/drive/folders/10wJMSWm9yhYT81a9_1kNBXW6r47Ti3TF" className="lnk" target="_blank">
               <span className="text">Download CV</span>
-              <span class="ion ion-ios-cloud-download"></span>
-            </a>
-            <a href="#" className="lnk discover">
-              <span className="text">Contact Me</span>
-              <span class="ion ion-paper-airplane"></span>
+              <span className="ion ion-android-download" />
             </a>
           </div>
         </div>
       </Home>
       <ContentContainer>
         <About>
-          <AboutMe bio={bio} />
+          <AboutMe callIconStyle={styles.call_icon} />
           <Services />
-          <Pricing />
-          <FunFact />
-          <Clients />
-          <Quote />
+          <Testimonials />
+          <Achievement />
         </About>
         <Resume>
           <ResumeSection />
           <Skills />
-          <Testimonials />
+          {/* <Quote /> */}
         </Resume>
         <Work>
-          <RecentWorks />
+          <RecentWorksWritter />
         </Work>
-        <Blog>
-          <BlogSection />
-        </Blog>
+        <Product>
+          <ProductList />
+        </Product>
         <Contact>
-          <ContactInfo />
+          <ContactInfo styles={styles} />
           <ContactForm />
         </Contact>
       </ContentContainer>
     </Layout>
   );
 };
-export default IndexDark;
+export default Index;

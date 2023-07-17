@@ -47,7 +47,7 @@ const ContentModal = () => {
         element.addEventListener("click", () => {
           setOpen(true);
           const hidenElement =
-            element.parentElement.getElementsByClassName("mfp-hide")[0];
+            element.parentElement.parentElement.getElementsByClassName("mfp-hide")[0];
           const content_ = hidenElement.getElementsByClassName("content")[0];
           setContent(content_);
         });

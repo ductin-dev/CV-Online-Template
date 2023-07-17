@@ -1,0 +1,38 @@
+.call_icon {
+    justify-content: center;
+    width: 15px;
+    height: 15px;
+}
+
+.call_icon:hover {
+    color: #db7032;
+}
+
+.social_link_container {
+    display: flex;
+    column-gap: 10px;
+    margin-top: 10px;
+}
+
+.social_link_item {
+    color: azure;
+    justify-content: center;
+    padding: 7px;
+    border-radius: 3px;
+    margin: 0px;
+    display: flex;
+    width: 30px;
+    height: 30px;
+}
+
+.social_link_fb {
+    background-color: #468fce;
+}
+
+.social_link_item:hover {
+    color: azure;
+}
+
+.social_link_fb:hover {
+    background-color: #e6905f;
+}

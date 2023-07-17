@@ -7,20 +7,23 @@ function MyApp({ Component, pageProps }) {
   return (
     <State>
       <Head>
-        <link
-          href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
-          rel="stylesheet"
-        />
-        <link rel="stylesheet" href="css/basic.css" />
-        <link rel="stylesheet" href="css/layout.css" />
-        <link rel="stylesheet" href="css/blogs.css" />
-        <link rel="stylesheet" href="css/ionicons.css" />
-        <link rel="stylesheet" href="css/magnific-popup.css" />
-        <link rel="stylesheet" href="css/animate.css" />
-        <link rel="stylesheet" href="css/gradient.css" />
+        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="language" content="English" />
 
-        <title>Ryan - vCard / Resume / CV Template</title>
-        <link rel="shortcut icon" href="images/favicons/favicon.ico" />
+        <title>Mai Thị Mỹ Giang | Portfolio | Profile | CV</title>
+        <meta name="description" content="Online Portfolio of Mai Thi My Giang, a Content Writer Specialist,
+          Talent Acquisition and Recruiter. Contact for works: maimygiang.0101@gmail.com or via contact information on this website"/>
+
+        <meta property="og:title" content="Mai Thị Mỹ Giang | Portfolio | Profile | Online CV" />
+        <meta property="og:description" content="Online Portfolio of Mai Thi My Giang, a Content Writer Specialist,
+          Talent Acquisition and Recruiter. Contact for works at maimygiang.0101@gmail.com or via contact informations on this website"/>
+        <meta property="og:url" content="https://giangmtm.satdevelop.com" />
+        <meta property="og:image" content="images/og_bg.jpg" />
+
+        <meta name="keywords" content="Recruit, Talent acquisition, Content Writer, HR, Freelance, Da Nang, CV, Resume, Profile, Mai Thi My Giang" />
+        <meta name="robots" content="index, follow" />
+        <meta name="revisit-after" content="3 days" />
+        <meta name="author" content="satdevelop.com" />
       </Head>
       <PreLoader />
       <Component {...pageProps} />

@@ -5,15 +5,15 @@ import Context from "../context/context";
 const headerMenus = [
   { title: "About", link: "about", icon: "icon fa fa-user-o" },
   { title: "Resume", link: "resume", icon: "icon fa fa-list-alt" },
-  { title: "Works", link: "works", icon: "icon fa fa-object-ungroup" },
-  { title: "Blog", link: "blog", icon: "icon fa fa-commenting-o" },
+  { title: "Creation", link: "product", icon: "icon fa fa-bullseye" },
+  { title: "Gallery", link: "works", icon: "icon fa fa-object-ungroup" },
   { title: "Contact", link: "contacts", icon: "icon fa fa-envelope-o" },
 ];
 
 const Header = ({ noSideBarBtn, menus, animationText }) => {
   const { changeNav, nav, changeSideBar } = useContext(Context);
   useEffect(() => {
-    const sctionScroll = () => {};
+    const sctionScroll = () => { };
     window.addEventListener("scroll", sctionScroll);
   }, []);
 
@@ -22,7 +22,7 @@ const Header = ({ noSideBarBtn, menus, animationText }) => {
   return (
     <header className="header">
       <div className="profile">
-        <div className="title">Ryan Adlard</div>
+        <div className="title">Mai Thi My - Giang</div>
         <div className="subtitle subtitle-typed">
           <TypingAnimation data={animationText} />
         </div>
