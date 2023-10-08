@@ -41,7 +41,7 @@ const Index = () => {
             style={{ backgroundImage: "url(images/giang-avatar1new.jpg)" }}
           />
           {/* profile titles */}
-          <div className="title">Mai Thi My Giang</div>
+          <div className="title">Mai Thi My. Giang</div>
 
           <TypingAnimation data={animationText} />
           {/* profile socials */}
