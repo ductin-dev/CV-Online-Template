@@ -1,0 +1,23 @@
+name: Publish CV
+
+on:
+  push:
+    branches: [ cv/giang ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Deploy using ssh
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }} 
+        key: ${{ secrets.PRIVATE_KEY }}
+        port: 22
+        script: |
+          cd ~/home/mod/Project/SmallProject/CV-Online-Template
+          git pull origin main
+          git status
+          docker-compose up --build -d
