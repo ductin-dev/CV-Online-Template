@@ -18,6 +18,6 @@ jobs:
         port: 22
         script: |
           cd ~/Project/SmallProject/CV-Online-Template
-          git pull origin main
+          git pull origin cv/giang
           git status
           docker-compose up --build -d
