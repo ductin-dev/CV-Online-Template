@@ -20,4 +20,5 @@ jobs:
           cd ~/Project/SmallProject/CV-Online-Template
           git pull origin cv/giang
           git status
+          docker-compose down
           docker-compose up --build -d
