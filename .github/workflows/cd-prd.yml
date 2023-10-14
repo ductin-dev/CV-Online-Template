@@ -9,7 +9,27 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Deploy using ssh
+    - uses: actions/checkout@v2
+    - name: Build image
+      run: |
+        docker compose build
+        docker save -o build.tar giangcv-fe:latest
+
+    - name: Setup SSH Keys and known_hosts
+      env:
+        SSH_AUTH_SOCK: /tmp/ssh_agent.sock
+      run: |
+        ssh-agent -a $SSH_AUTH_SOCK > /dev/null
+        ssh-add - <<< "${{ secrets.PRIVATE_KEY }}"
+
+    - name: Copy tar file to VPS
+      env:
+        SSH_AUTH_SOCK: /tmp/ssh_agent.sock
+      run: |
+        ssh -o StrictHostKeyChecking=no ${{ secrets.USERNAME }}@${{ secrets.HOST }} uptime
+        scp build.tar ${{ secrets.USERNAME }}@${{ secrets.HOST }}:~/Project/SmallProject/CV-Online-Template          
+
+    - name: Load Docker image on VPS
       uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.HOST }}
@@ -18,7 +38,4 @@ jobs:
         port: 22
         script: |
           cd ~/Project/SmallProject/CV-Online-Template
-          git pull origin cv/giang
-          git status
-          docker-compose down
-          docker-compose up --build -d
+          sh deploy.sh
