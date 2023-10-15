@@ -1,4 +1,3 @@
-docker-compose stop
-docker image rmi giangcv-fe:latest
+docker-compose down --rmi all
 docker load -i ./build.tar
-docker-compose up -p "GiangCV" -d
+docker-compose -p "GiangCV" up -d

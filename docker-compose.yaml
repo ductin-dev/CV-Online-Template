@@ -3,6 +3,7 @@ version: '3.8'
 services:
   fe:
     container_name: GiangCV
+    image: giangcv-fe:latest
     build:
       context: ./
     ports:
