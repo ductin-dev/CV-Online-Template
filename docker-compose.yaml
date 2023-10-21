@@ -1,12 +1,15 @@
 version: "3.8"
 
 services:
-    client:
-        container_name: phianhcv-fe
-        image: phianhcv:latest
-        build: .
-    nginx:
-        container_name: phianhcv-nginx-client
-        build: ./nginx
-        ports:
-            - 3003:80
+  cat:
+    container_name: PhiAnhCV2-FE
+    build:
+      context: ./
+    ports:
+      - "3005:3000"
+    environment:
+      - TZ=Asia/Ho_Chi_Minh
+    restart: unless-stopped
+    labels:
+      io.portainer.accesscontrol.users: satteam
+

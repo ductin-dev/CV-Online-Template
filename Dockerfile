@@ -1,20 +1,36 @@
-# Stage 1: Compile and Build
-FROM node:alpine as build
+# Install dependencies only when needed
+FROM node:18-alpine AS deps
 
-# Set the working directory
-WORKDIR /usr/local/app
+# Check https://github.com/nodejs/docker-node/tree/b4117f9333da4138b03a546ec926ef50a31506c3#nodealpine to understand why libc6-compat might be needed.
+RUN apk add --no-cache libc6-compat
+WORKDIR /app
+COPY package.json package-lock.json ./
+RUN npm install --frozen-lockfile
 
-# Add the source code to app
-COPY package*.json ./usr/local/app/
-COPY package*.lock ./usr/local/app/
-COPY ./ /usr/local/app/
+# Rebuild the source code only when needed
+FROM node:18-alpine AS builder
+ARG env
+WORKDIR /app
+COPY . .
+COPY --from=deps /app/node_modules ./node_modules
+RUN npm run build && npm install --production --ignore-scripts --prefer-offline
 
-# Install all the dependencies
-RUN npm install
+# Change ownership during build stage
+USER root
+RUN addgroup -g 1001 -S nodejs
+RUN adduser -S nextjs -u 1001
+RUN chown -R nextjs:nodejs /app
 
-# Generate the build of the application
-RUN npm run build
+# Production image, copy all the files and run next
+FROM node:18-alpine AS runner
+WORKDIR /app
+COPY --from=builder /app/package.json .
+COPY --from=builder /app/package-lock.json .
+COPY --from=builder /app/next.config.js ./
+COPY --from=builder /app/public ./public
+COPY --from=builder /app/.next/standalone ./
+COPY --from=builder /app/.next/static ./.next/static
 
-# Expose port 3000 (Default)
 EXPOSE 3000
-CMD ["npm", "start"]
+
+ENTRYPOINT [ "node", "server.js" ]
