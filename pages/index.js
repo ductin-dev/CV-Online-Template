@@ -74,19 +74,45 @@ const headerMenus = [
   { title: "Contact", link: "contacts", icon: "icon ion-at" },
 ];
 
-const animationText = ["Active person", "Front-End Developer", "Back-End Developer"];
+const animationText = [
+  "Active person",
+  "Front-End Developer",
+];
 
 const Index5 = () => {
   return (
     <Layout
       bg={"img"}
-      bgImgUrl="images/bg3.jpg"
+      bgImgUrl="images/bg.svg"
       animationIn={"rollIn"}
       animationOut={"rollOut"}
     >
       <Head>
         <link rel="stylesheet" href="css/new-skin/new-skin.css" />
         <link rel="stylesheet" href="css/demos/demo-5-colors.css" />
+        {/* Main meta tags */}
+        <title>Tran Phi Anh</title>
+        <meta name="title" content="Tran Phi Anh CV" />
+        <meta name="description" content="Tran Phi Anh CV" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
+        />
+        {/* Use for dev */}
+        <meta name="google" content="nositelinkssearchbox" />
+        <meta
+          name="google-site-verification"
+          content="6WQ3wZmsGSmmq4mreVqbBlEklPoDmEhoDcq-uwelt8s"
+        />
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="Tran Phi Anh CV"
+        />
+        <meta property="og:description" content="Tran Phi Anh CV" />
+        <meta property="og:image" content="images/avatar.jpg" />
+
       </Head>
       <Header noSideBarBtn menus={headerMenus} animationText={animationText} />
       <Home>
@@ -94,7 +120,10 @@ const Index5 = () => {
           {/* profile image */}
           <div
             className="slide"
-            style={{ backgroundImage: "url(https://res.cloudinary.com/deqzndnjs/image/upload/v1663639647/samples/avatar-profile_g7wbpa.jpg)" }}
+            style={{
+              backgroundImage:
+                "url(https://res.cloudinary.com/deqzndnjs/image/upload/v1663639647/samples/avatar-profile_g7wbpa.jpg)",
+            }}
           />
           {/* profile titles */}
           <div className="title">Tran Phi Anh</div>
@@ -102,19 +131,35 @@ const Index5 = () => {
 
           {/* profile socials */}
           <div className="social">
-            <a target="_blank" rel="noreferrer" href="https://www.instagram.com/tran_phi_anh_2008/">
-              <span className="fa fa-instagram" title="Instagram" />
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.linkedin.com/in/phineas-tran-86260325b/"
+            >
+              <span className="fa fa-linkedin" title="Instagram" />
             </a>
-            <a target="_blank" rel="noreferrer" href="https://www.facebook.com/Anhtpde140084/">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.facebook.com/Anhtpde140084/"
+            >
               <span className="fa fa-facebook-f" title="Facebook" />
             </a>
-            <a target="_blank" rel="noreferrer" href="https://soundcloud.com/tr-n-phi-anh-900810560">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://soundcloud.com/tr-n-phi-anh-900810560"
+            >
               <span className="fa fa-soundcloud" title="Sound Cloud" />
             </a>
           </div>
           {/* profile buttons */}
           <div className="lnks">
-            <a href="https://www.facebook.com/messages/t/100015031178777" target="_blank" className="lnk discover">
+            <a
+              href="https://www.linkedin.com/in/phineas-tran-86260325b/"
+              target="_blank"
+              className="lnk discover"
+            >
               <span className="text">Contact Me</span>
               <span className="ion ion-paper-airplane" />
             </a>
@@ -122,7 +167,7 @@ const Index5 = () => {
         </div>
       </Home>
       <ContentContainer>
-        <About >
+        <About>
           <AboutMe bio={bio} />
           {/* <Clients /> */}
           {/* <Services serviceList={serviceList} /> */}
@@ -130,18 +175,17 @@ const Index5 = () => {
           <FunFact />
           <Quote />
         </About>
-        <Resume >
+        <Resume>
           <ResumeSectionFitness />
           <SkillsFitness />
-          {/* <Testimonials /> */}
         </Resume>
-        <Work >
+        <Work>
           <RecentWorksFitness />
         </Work>
         {/* <Blog >
           <BlogSection />
         </Blog> */}
-        <Contact >
+        <Contact>
           <ContactInfo />
           {/* <ContactForm /> */}
         </Contact>

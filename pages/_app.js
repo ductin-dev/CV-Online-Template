@@ -18,6 +18,7 @@ function MyApp({ Component, pageProps }) {
         <link rel="stylesheet" href="css/magnific-popup.css" />
         <link rel="stylesheet" href="css/animate.css" />
         <link rel="stylesheet" href="css/gradient.css" />
+        <link rel="stylesheet" href="css/bg.css" />
 
         <title>Tran Phi Anh</title>
         <link rel="shortcut icon" href="images/favicons/favicon.ico" />

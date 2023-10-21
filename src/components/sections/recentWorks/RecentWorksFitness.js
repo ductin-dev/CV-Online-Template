@@ -82,6 +82,73 @@ const RecentWorksFitness = () => {
         {/* content */}
         <div className="row grid-items border-line-v">
           {/* work item photo */}
+
+          <div className="col col-d-6 col-t-6 col-m-12 grid-item photo border-line-h">
+            <div className="box-item">
+              <div className="image">
+                <a target="_blank" href="images/corize3.jpg" className="has-popup-image">
+                  <img src="images/corize3.jpg" alt="Corize inc" />
+                  <span className="info">
+                    <span className="ion ion-image" />
+                  </span>
+                </a>
+              </div>
+              <div className="desc">
+                <a target="_blank"
+                  href="images/corize3.jpg"
+                  className="name has-popup-image"
+                >
+                  Corize INC
+                </a>
+                <div className="category">Corize INC</div>
+              </div>
+            </div>
+          </div>
+
+          <div className="col col-d-6 col-t-6 col-m-12 grid-item photo border-line-h">
+            <div className="box-item">
+              <div className="image">
+                <a target="_blank" href="images/corize2.jpg" className="has-popup-image">
+                  <img src="images/corize2.jpg" alt="Corize inc" />
+                  <span className="info">
+                    <span className="ion ion-image" />
+                  </span>
+                </a>
+              </div>
+              <div className="desc">
+                <a target="_blank"
+                  href="images/corize2.jpg"
+                  className="name has-popup-image"
+                >
+                  Corize team
+                </a>
+                <div className="category">Corize INC</div>
+              </div>
+            </div>
+          </div>
+
+          <div className="col col-d-6 col-t-6 col-m-12 grid-item photo border-line-h">
+            <div className="box-item">
+              <div className="image">
+                <a target="_blank" href="images/corize1.jpg" className="has-popup-image">
+                  <img src="images/corize1.jpg" alt="Corize inc" />
+                  <span className="info">
+                    <span className="ion ion-image" />
+                  </span>
+                </a>
+              </div>
+              <div className="desc">
+                <a target="_blank"
+                  href="images/corize1.jpg"
+                  className="name has-popup-image"
+                >
+                  Corize INC
+                </a>
+                <div className="category">Current company</div>
+              </div>
+            </div>
+          </div>
+
           <div className="col col-d-6 col-t-6 col-m-12 grid-item photo border-line-h">
             <div className="box-item">
               <div className="image">
@@ -97,9 +164,9 @@ const RecentWorksFitness = () => {
                   href="https://res.cloudinary.com/deqzndnjs/image/upload/v1663639663/samples/image-1_burijy.jpg"
                   className="name has-popup-image"
                 >
-                  Akadev IDE LowCode Team
+                  Akadev IDE Develop Team
                 </a>
-                <div className="category">Image</div>
+                <div className="category">FPT Software</div>
               </div>
             </div>
           </div>
@@ -121,7 +188,7 @@ const RecentWorksFitness = () => {
                 >
                   Team Travel Together
                 </a>
-                <div className="category">Image</div>
+                <div className="category">University</div>
               </div>
             </div>
           </div>
@@ -165,7 +232,7 @@ const RecentWorksFitness = () => {
                 >
                   F-Complex
                 </a>
-                <div className="category">Image</div>
+                <div className="category">FPT Software</div>
               </div>
             </div>
           </div>
@@ -209,7 +276,7 @@ const RecentWorksFitness = () => {
                 >
                   SATDEVELOP Team
                 </a>
-                <div className="category">Image</div>
+                <div className="category">Develop team</div>
               </div>
             </div>
           </div>

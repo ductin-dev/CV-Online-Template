@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Fragment } from "react";
 const ResumeSection = () => {
   return (
@@ -107,42 +108,71 @@ export const ResumeSectionFitness = () => {
               {/* <div className="date">2021 - 2022</div> */}
               <div className="name">Developer</div>
               <div className="company">FPT Software</div>
-              <p>
-                + Participated in the development of Web projects and built front-end functions of Web applications, IDE platform.
-              </p>
-              <p>
-                + Implement functions and modules base on given requirements.
-              </p>
-              <p>
-                + Developing a LowCode platform for developer used in their products.
-              </p>
-              <p>
-                + Maintain, optimize code and enhance ongoing products.
-              </p>
+              <li>
+                Participated in the development of Web projects and built
+                front-end functions of Web applications, IDE platform.
+              </li>
+              <li>
+                Implement functions and modules base on given requirements.
+              </li>
+              <li>
+                Developing a LowCode platform for developer used in their
+                products.
+              </li>
+            </div>
+            <div className="resume-item border-line-h active">
+              {/* <div className="date">2021 - 2022</div> */}
+              <div className="name">Developer</div>
+              <Link className="company" href="https://corize.co.jp/en/">
+                <a target="_blank" rel="noopener">
+                  At Corize Inc
+                </a>
+              </Link>
+              <li>
+                Designed normal tasks, developed a new story, fixed bugs, and
+                reformated code to make it simple, and clear without
+                duplication.
+              </li>
+              <li>
+                Solved problems related to logic, performance, optimization
+                problems for components.
+              </li>
+              <li>Maintained, optimized code and enhanced ongoing products.</li>
+              <li>Implemented responsive screen based on design.</li>
             </div>
             <div className="resume-item border-line-h">
               {/* <div className="date">2021 - 2022</div> */}
               <div className="name">Front-End developer</div>
               {/* <div className="company">FPT Software - IDE Low-code(Akadev)</div> */}
               <p>
-                Having above 1-year experience in developing Front-End application using ReactJs, Angular. Experience about normal task is design, developent new story, fix bugs, reformatting code for make simple, clear, not duplication.
+                Have 2 years of experience in Front- in developing Front-End
+                application using ReactJs, Nextjs. Experience about normal task
+                is design, development new story, fix bugs, reformatting code
+                for make simple, clear, not duplication.
               </p>
             </div>
             <div className="resume-item border-line-h">
               {/* <div className="date">2021 - 2022</div> */}
               <div className="name">Back-End developer</div>
               {/* <div className="company">FPT University - IDE Low-code(Akadev)</div> */}
-              <p>
-                Knowledge of OOP, Rest API architecture style, design patterns, security...
-              </p>
+              <li>
+                Knowledge of OOP, Basic knowledge of rest API architecture
+                style, design patterns, security...
+              </li>
+              <li>
+                Used to work with Nodejs, Express, Apollo Server, Java, Spring
+                boot.
+              </li>
             </div>
             <div className="resume-item border-line-h">
               {/* <div className="date">2021 - 2022</div> */}
               <div className="name">Team Work, Communication</div>
               {/* <div className="company">FPT University - IDE Low-code(Akadev)</div> */}
-              <p>
-                Can read and understand English well, basic English communication. More than 1 year of team work experience.
-              </p>
+              <li>
+                Can read and understand English well, basic English
+                communication. More than 1 year of team work experience.
+              </li>
+              <li>Can work well with Scrum process.</li>
             </div>
           </div>
         </div>
@@ -160,14 +190,18 @@ export const ResumeSectionFitness = () => {
               <div className="name">Quang Tri Town High school</div>
               <div className="company">Quang Tri</div>
               <p>
-                As a famous school number 1 in Quang Tri, there are many academic achievements as well as great programs of VTV.
+                As a famous school number 1 in Quang Tri, there are many
+                academic achievements as well as great programs of VTV.
               </p>
             </div>
             <div className="resume-item border-line-h">
               <div className="date">2018 - 2022</div>
               <div className="name">FPT University</div>
               <div className="company">DaNang</div>
-              <p>FPT University is a private university with main campus in Da Nang belonging to FPT Corporation.</p>
+              <p>
+                FPT University is a private university with main campus in Da
+                Nang belonging to FPT Corporation.
+              </p>
             </div>
           </div>
         </div>

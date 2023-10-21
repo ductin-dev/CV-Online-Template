@@ -40,7 +40,7 @@ const FunFact = () => {
               <div className="icon">
                 <span className="fa fa-flag" />
               </div>
-              <div className="name">3 Countries Visited</div>
+              <div className="name">4 Countries Visited</div>
             </div>
           </div>
           <div className="clear" />

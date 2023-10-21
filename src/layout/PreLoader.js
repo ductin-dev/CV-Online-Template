@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const PreLoader = () => {
@@ -5,17 +6,14 @@ const PreLoader = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 2500);
   }, []);
 
   return (
-    <div className="preloader" style={{ display: loading ? "block" : "none" }}>
+    <div className="preloader" style={{ display: loading ? "block" : "none", background: '#FDFDFD' }}>
       <div className="centrize full-width">
         <div className="vertical-center">
-          <div className="spinner">
-            <div className="double-bounce1" />
-            <div className="double-bounce2" />
-          </div>
+            <img src={'images/loading.gif'} width={250} alt="loading" />
         </div>
       </div>
     </div>

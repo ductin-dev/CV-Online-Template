@@ -18,7 +18,7 @@ const Quote = () => {
               </div>
               <div className="user">
                 <div className="img">
-                  <img src="https://nhahangcarnaval.com/wp-content/uploads/2022/01/hinh-anh-avatar-de-thuong-cute.jpg" alt="PhiAnh" />
+                  <img src="https://nhahangcarnaval.com/wp-content/uploads/2022/01/hinh-anh-avatar-de-thuong-cute.jpg" alt="Tran Phi Anh" />
                 </div>
                 <div className="info">
                   <div className="name">Phi Anh</div>

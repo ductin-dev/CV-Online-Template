@@ -21,7 +21,7 @@ const ContactInfo = () => {
                 <strong>Address . . . . .</strong> DaNang, Vietnam
               </li>
               <li>
-                <strong>Email . . . . .</strong> tranphianh1518@gmail.com
+                <strong>Email . . . . .</strong> phianh.dev@gmail.com
               </li>
               <li>
                 <strong>Phone . . . . .</strong> 0941404225
