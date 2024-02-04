@@ -23,6 +23,11 @@ export default function Document() {
             <body>
                 <Main />
                 <NextScript />
+
+                {/* Hoa mai tết trang trí */}
+                <div id='snowflakeContainer'>
+                    <p className='snowflake'><img style={{ width: "20px" }} src="https://1.bp.blogspot.com/-CXx9jt2JMRk/Vq-Lh5fm88I/AAAAAAAASwo/XivooDn_oSY/s1600/hoamai.png" /></p>
+                </div>
             </body>
         </Html>
     )

@@ -2,7 +2,10 @@ import "font-awesome/css/font-awesome.min.css";
 import Head from "next/head";
 import State from "../src/context/state";
 import PreLoader from "../src/layout/PreLoader";
+
 import "../styles/globals.css";
+import "../public/css/giang-cv/rain-flower.css"
+
 function MyApp({ Component, pageProps }) {
   return (
     <State>
